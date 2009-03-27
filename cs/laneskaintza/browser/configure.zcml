@@ -7,4 +7,57 @@
 
   <!-- -*- extra stuff goes here -*- -->
 
+   <browser:page
+      for="..interfaces.laneskaintza.Ilaneskaintza"
+      name="view"
+      class=".laneskaintzaview.laneskaintzaView"
+      template="laneskaintzaview.pt"
+      permission="zope.Public"
+    />
+    <browser:menuItem
+        for="..interfaces.laneskaintza.Ilaneskaintza"
+        menu="plone_displayviews"
+        title="laneskaintza view"
+        action="@@view"
+        description="Default representation of a laneskaintza"
+        />
+   <browser:page
+      for="..interfaces.laneskaintzafolder.IlaneskaintzaFolder"
+      name="view"
+      class=".laneskaintzafolderview.laneskaintzaFolderView"
+      template="laneskaintzafolderview.pt"
+      permission="zope.Public"
+    />
+    <browser:menuItem
+        for="..interfaces.laneskaintzafolder.IlaneskaintzaFolder"
+        menu="plone_displayviews"
+        title="laneskaintzafolder view"
+        action="@@view"
+        description="Default representation of a laneskaintzafolder"
+        />
+    <browser:page
+      name="laneskaintza_lista"
+      for="*"
+      class=".laneskaintza_lista.Lista"
+      permission="zope2.View"
+      allowed_attributes="laneskaintza_lista"
+	
+      />
+    <subscriber
+        for="..interfaces.laneskaintza.Ilaneskaintza
+             Products.Archetypes.interfaces._event.IObjectInitializedEvent"
+        handler=".subscribers.laneskaintza_created" />
+
+    <browser:page
+      for="..interfaces.laneskaintzafolder.IlaneskaintzaFolder"
+      name="pasted"
+      template="pasted.pt"
+      permission="zope.Public"
+    />
+    <browser:page
+      for="..interfaces.laneskaintzafolder.IlaneskaintzaFolder"
+      name="prozesuan"
+      template="prozesuan.pt"
+      permission="zope.Public"
+    />
 </configure>
