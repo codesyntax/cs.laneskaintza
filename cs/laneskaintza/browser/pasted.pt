@@ -15,9 +15,9 @@
           <tal:content content="here/Title"></tal:content>
 	</h1>
 	<ul id="tabs">
-	<li><a tal:attributes="href string:${here/absolute_url}" i18n:domain="LanEskaintza" i18n:translate="zabalik">Alta emateko zabalik daudenak</a></li>
-	<li><a tal:attributes="href string:${here/absolute_url}/prozesuan" i18n:domain="LanEskaintza" i18n:translate="prozesuan">Prozesuan</a></li>
-        <li class="on"><a tal:attributes="href string:${here/absolute_url}/past" i18n:domain="LanEskaintza" i18n:translate="bukatutakoak">Bukatutakoak</a></li>
+	<li><a tal:attributes="href string:${here/absolute_url}" i18n:domain="cs.laneskaintza" i18n:translate="zabalik">Alta emateko zabalik daudenak</a></li>
+	<li><a tal:attributes="href string:${here/absolute_url}/prozesuan" i18n:domain="cs.laneskaintza" i18n:translate="prozesuan">Prozesuan</a></li>
+        <li class="on"><a tal:attributes="href string:${here/absolute_url}/past" i18n:domain="cs.laneskaintza" i18n:translate="bukatutakoak">Bukatutakoak</a></li>
 	</ul>
        <metal:listingmacro define-macro="listing">
         <tal:foldercontents define="bista here/laneskaintza_lista;edukia python: bista.laneskaintza_lista(3); batch edukia">

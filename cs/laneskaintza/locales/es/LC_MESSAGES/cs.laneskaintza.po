@@ -1,0 +1,120 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2009-03-30 07:05+0000\n"
+"PO-Revision-Date: 2009-03-30 09:10+0100\n"
+"Last-Translator: lur <libargutxi@codesyntax.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: es\n"
+"Language-Name: Espanish\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+
+#: ./content/laneskaintzafolder.py:24
+msgid "Description of contact_information"
+msgstr "Contacto"
+
+#: ./content/laneskaintza.py:64
+msgid "Description of end_data"
+msgstr "Fecha de finalización"
+
+#: ./content/laneskaintza.py:27
+msgid "Description of file_number"
+msgstr "Número de expediente"
+
+#: ./content/laneskaintza.py:37
+msgid "Description of information"
+msgstr "Más información"
+
+#: ./content/laneskaintzafolder.py:37
+msgid "Description of situation_source"
+msgstr "Estados"
+
+#: ./content/laneskaintza.py:51
+msgid "Description of start_data"
+msgstr "Fecha de inicio"
+
+#. Default: "Description of the Example Type"
+#: ./profiles/default/types/laneskaintza.xml
+#: ./profiles/default/types/laneskaintzaFolder.xml
+msgid "Description of the Example Type"
+msgstr ""
+
+#. Default: "Aurkeztu eskaera lan-eskaintza honetan"
+#: ./browser/laneskaintzaview.pt:14
+msgid "alta-eman"
+msgstr "Presentar solicitud en esta convocatoria"
+
+#: ./content/laneskaintzafolder.py:23
+msgid "contact_information"
+msgstr "Contacto"
+
+#: ./content/laneskaintza.py:63
+msgid "end_data"
+msgstr "Fecha de finalización"
+
+#: ./content/laneskaintza.py:26
+msgid "file_number"
+msgstr "Número de expediente"
+
+#. Default: "Search results"
+#: ./browser/laneskaintzaview.pt:117
+msgid "heading_search_results"
+msgstr ""
+
+#: ./content/laneskaintza.py:36
+msgid "information"
+msgstr "Más información"
+
+#: ./browser/laneskaintzaview.pt:39
+msgid "label_laneskaintza_contact_information"
+msgstr "Contacto"
+
+#: ./browser/laneskaintzaview.pt:34
+msgid "label_laneskaintza_enddata"
+msgstr "Fecha de finalización"
+
+#: ./browser/laneskaintzaview.pt:19
+msgid "label_laneskaintza_file_number"
+msgstr "Número de expediente"
+
+#: ./browser/laneskaintzaview.pt:24
+msgid "label_laneskaintza_information"
+msgstr "Más información"
+
+#: ./browser/laneskaintzaview.pt:29
+msgid "label_laneskaintza_startdata"
+msgstr "Fecha de inicio"
+
+#. Default: "Search"
+#: ./browser/laneskaintzaview.pt:110
+msgid "label_search_id"
+msgstr ""
+
+#. Default: "Set search key"
+#: ./browser/laneskaintzaview.pt:94
+msgid "label_set_search_key"
+msgstr ""
+
+#. Default: "laneskaintza"
+#: ./profiles/default/types/laneskaintza.xml
+msgid "laneskaintza"
+msgstr "Oferta de empleo"
+
+#. Default: "laneskaintzaFolder"
+#: ./profiles/default/types/laneskaintzaFolder.xml
+msgid "laneskaintzaFolder"
+msgstr "Ofertas de empleo"
+
+#: ./content/laneskaintzafolder.py:36
+msgid "situation_source"
+msgstr "Estados"
+
+#: ./content/laneskaintza.py:50
+msgid "start_data"
+msgstr "Fecha de inicio"
+

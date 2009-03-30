@@ -1,0 +1,120 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2009-03-30 07:05+0000\n"
+"PO-Revision-Date: 2009-03-30 09:06+0100\n"
+"Last-Translator: lur <libargutxi@codesyntax.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: eu\n"
+"Language-Name: Basque\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+
+#: ./content/laneskaintzafolder.py:24
+msgid "Description of contact_information"
+msgstr ""
+
+#: ./content/laneskaintza.py:64
+msgid "Description of end_data"
+msgstr "Bukaera data"
+
+#: ./content/laneskaintza.py:27
+msgid "Description of file_number"
+msgstr "Espediente zenbakia"
+
+#: ./content/laneskaintza.py:37
+msgid "Description of information"
+msgstr "Informazio gehiago"
+
+#: ./content/laneskaintzafolder.py:37
+msgid "Description of situation_source"
+msgstr "Egoera posibleak"
+
+#: ./content/laneskaintza.py:51
+msgid "Description of start_data"
+msgstr "Hasiera data"
+
+#. Default: "Description of the Example Type"
+#: ./profiles/default/types/laneskaintza.xml
+#: ./profiles/default/types/laneskaintzaFolder.xml
+msgid "Description of the Example Type"
+msgstr ""
+
+#. Default: "Aurkeztu eskaera lan-eskaintza honetan"
+#: ./browser/laneskaintzaview.pt:14
+msgid "alta-eman"
+msgstr "Aurkeztu eskaera lan-eskaintza honetan"
+
+#: ./content/laneskaintzafolder.py:23
+msgid "contact_information"
+msgstr "Kontaktua"
+
+#: ./content/laneskaintza.py:63
+msgid "end_data"
+msgstr "Bukaera data"
+
+#: ./content/laneskaintza.py:26
+msgid "file_number"
+msgstr "Espediente zenbakia"
+
+#. Default: "Search results"
+#: ./browser/laneskaintzaview.pt:117
+msgid "heading_search_results"
+msgstr ""
+
+#: ./content/laneskaintza.py:36
+msgid "information"
+msgstr "Informazio gehiago"
+
+#: ./browser/laneskaintzaview.pt:39
+msgid "label_laneskaintza_contact_information"
+msgstr "Kontaktua"
+
+#: ./browser/laneskaintzaview.pt:34
+msgid "label_laneskaintza_enddata"
+msgstr "Bukaera data"
+
+#: ./browser/laneskaintzaview.pt:19
+msgid "label_laneskaintza_file_number"
+msgstr "Espediente zenbakia"
+
+#: ./browser/laneskaintzaview.pt:24
+msgid "label_laneskaintza_information"
+msgstr "Informazio gehiago"
+
+#: ./browser/laneskaintzaview.pt:29
+msgid "label_laneskaintza_startdata"
+msgstr "Hasiera data"
+
+#. Default: "Search"
+#: ./browser/laneskaintzaview.pt:110
+msgid "label_search_id"
+msgstr ""
+
+#. Default: "Set search key"
+#: ./browser/laneskaintzaview.pt:94
+msgid "label_set_search_key"
+msgstr ""
+
+#. Default: "laneskaintza"
+#: ./profiles/default/types/laneskaintza.xml
+msgid "laneskaintza"
+msgstr "laneskaintza"
+
+#. Default: "laneskaintzaFolder"
+#: ./profiles/default/types/laneskaintzaFolder.xml
+msgid "laneskaintzaFolder"
+msgstr "laeskaintza karpeta"
+
+#: ./content/laneskaintzafolder.py:36
+msgid "situation_source"
+msgstr "Egoerak"
+
+#: ./content/laneskaintza.py:50
+msgid "start_data"
+msgstr "Hasiera data"
+
