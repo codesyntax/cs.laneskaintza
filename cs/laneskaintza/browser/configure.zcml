@@ -60,4 +60,10 @@
       template="prozesuan.pt"
       permission="zope.Public"
     />
+    <browser:page
+      for="..interfaces.laneskaintza.Ilaneskaintza"
+      name="laneskaintza_general"
+      template="laneskaintza_general.pt"
+      permission="zope.Public"
+    />
 </configure>
