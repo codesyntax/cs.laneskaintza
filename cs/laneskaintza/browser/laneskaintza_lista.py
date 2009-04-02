@@ -6,12 +6,13 @@ import pdb
 import os
 from Products.CMFCore.utils import getToolByName
 from zope.interface import implements
-
-class Lista(utils.BrowserView):
+from Products.Five.browser import BrowserView
+from Acquisition import aq_inner
+class Lista(BrowserView):
 
 			
 	def laneskaintza_lista(self, situation):
-		context = self.context[0]
+		context = aq_inner(self.context)
                 #import pdb;pdb.set_trace()
                 laneskaintzak=context.getFolderContents({'portal_type':'laneskaintza','review_state':'published'})
                 lista1=[]
