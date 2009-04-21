@@ -105,7 +105,7 @@
             <label 
                 for="id_number"
                 i18n:domain="LanEskaintza"
-                i18n:translate="label_identification_number">Identification number: 15398248R</label>
+                i18n:translate="label_identification_number">Code number: 15398248R</label>
             <input type="text" id="id_number" name="id_number"/>
             <input type="submit" i18n:attributes="value label_search_id"
                    value="Search"/>
