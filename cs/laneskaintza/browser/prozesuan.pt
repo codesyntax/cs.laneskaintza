@@ -21,7 +21,7 @@
 	</ul>
        
        <metal:listingmacro define-macro="listing">
-        <tal:foldercontents define="bista here/laneskaintza_lista;edukia python: bista.laneskaintza_lista(2); batch edukia">
+        <tal:foldercontents define="bista here/laneskaintza_lista;edukia python: bista.laneskaintza_lista(1); batch edukia">
          <div id="laneskaintzak">
          <tal:listing repeat="laneskaintza batch">
 	

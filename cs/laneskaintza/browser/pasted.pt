@@ -20,7 +20,7 @@
         <li class="on"><a tal:attributes="href string:${here/absolute_url}/past" i18n:domain="cs.laneskaintza" i18n:translate="bukatutakoak">Bukatutakoak</a></li>
 	</ul>
        <metal:listingmacro define-macro="listing">
-        <tal:foldercontents define="bista here/laneskaintza_lista;edukia python: bista.laneskaintza_lista(3); batch edukia">
+        <tal:foldercontents define="bista here/laneskaintza_lista;edukia python: bista.laneskaintza_lista(2); batch edukia">
          <div id="laneskaintzak">
          <tal:listing repeat="laneskaintza batch">
 	

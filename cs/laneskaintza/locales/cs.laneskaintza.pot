@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2009-03-30 07:05+0000\n"
+"POT-Creation-Date: 2009-04-27 08:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,12 +49,33 @@ msgstr ""
 msgid "alta-eman"
 msgstr ""
 
+#. Default: "Bukatutakoak"
+#: ./browser/laneskaintzafolderview.pt:17
+msgid "bukatutakoak"
+msgstr ""
+
 #: ./content/laneskaintzafolder.py:23
 msgid "contact_information"
 msgstr ""
 
 #: ./content/laneskaintza.py:63
 msgid "end_data"
+msgstr ""
+
+#: ./content/laneskaintza.py:78
+msgid "file_enrolled"
+msgstr ""
+
+#: ./content/laneskaintza.py:92
+msgid "file_exercise_results"
+msgstr ""
+
+#: ./content/laneskaintza.py:85
+msgid "file_exercises"
+msgstr ""
+
+#: ./content/laneskaintza.py:71
+msgid "file_information"
 msgstr ""
 
 #: ./content/laneskaintza.py:26
@@ -110,11 +131,25 @@ msgstr ""
 msgid "laneskaintzaFolder"
 msgstr ""
 
+#. Default: "Prozesuan"
+#: ./browser/laneskaintzafolderview.pt:16
+msgid "prozesuan"
+msgstr ""
+
+#: ./content/laneskaintza.py:100
+msgid "situation"
+msgstr ""
+
 #: ./content/laneskaintzafolder.py:36
 msgid "situation_source"
 msgstr ""
 
 #: ./content/laneskaintza.py:50
 msgid "start_data"
+msgstr ""
+
+#. Default: "Alta emateko zabalik daudenak"
+#: ./browser/laneskaintzafolderview.pt:15
+msgid "zabalik"
 msgstr ""
 

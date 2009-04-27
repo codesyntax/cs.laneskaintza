@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2009-03-30 07:05+0000\n"
-"PO-Revision-Date: 2009-03-30 09:10+0100\n"
+"POT-Creation-Date: 2009-04-27 08:33+0000\n"
+"PO-Revision-Date: 2009-04-27 10:54+0100\n"
 "Last-Translator: lur <libargutxi@codesyntax.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -49,6 +49,11 @@ msgstr ""
 msgid "alta-eman"
 msgstr "Presentar solicitud en esta convocatoria"
 
+#. Default: "Bukatutakoak"
+#: ./browser/laneskaintzafolderview.pt:17
+msgid "bukatutakoak"
+msgstr "Finalizados"
+
 #: ./content/laneskaintzafolder.py:23
 msgid "contact_information"
 msgstr "Contacto"
@@ -57,6 +62,22 @@ msgstr "Contacto"
 msgid "end_data"
 msgstr "Fecha de finalización"
 
+#: ./content/laneskaintza.py:78
+msgid "file_enrolled"
+msgstr "Lista de admitidos y excluídos"
+
+#: ./content/laneskaintza.py:92
+msgid "file_exercise_results"
+msgstr "Resultado de las pruebas"
+
+#: ./content/laneskaintza.py:85
+msgid "file_exercises"
+msgstr "Fechas y lugares de las pruebas"
+
+#: ./content/laneskaintza.py:71
+msgid "file_information"
+msgstr "Bases de la convocatoria"
+
 #: ./content/laneskaintza.py:26
 msgid "file_number"
 msgstr "Número de expediente"
@@ -64,7 +85,7 @@ msgstr "Número de expediente"
 #. Default: "Search results"
 #: ./browser/laneskaintzaview.pt:117
 msgid "heading_search_results"
-msgstr ""
+msgstr "Resultado"
 
 #: ./content/laneskaintza.py:36
 msgid "information"
@@ -93,7 +114,7 @@ msgstr "Fecha de inicio"
 #. Default: "Search"
 #: ./browser/laneskaintzaview.pt:110
 msgid "label_search_id"
-msgstr ""
+msgstr "Buscar"
 
 #. Default: "Set search key"
 #: ./browser/laneskaintzaview.pt:94
@@ -110,6 +131,15 @@ msgstr "Oferta de empleo"
 msgid "laneskaintzaFolder"
 msgstr "Ofertas de empleo"
 
+#. Default: "Prozesuan"
+#: ./browser/laneskaintzafolderview.pt:16
+msgid "prozesuan"
+msgstr "En proceso"
+
+#: ./content/laneskaintza.py:100
+msgid "situation"
+msgstr "Situación"
+
 #: ./content/laneskaintzafolder.py:36
 msgid "situation_source"
 msgstr "Estados"
@@ -117,4 +147,9 @@ msgstr "Estados"
 #: ./content/laneskaintza.py:50
 msgid "start_data"
 msgstr "Fecha de inicio"
+
+#. Default: "Alta emateko zabalik daudenak"
+#: ./browser/laneskaintzafolderview.pt:15
+msgid "zabalik"
+msgstr "Abierto"
 
