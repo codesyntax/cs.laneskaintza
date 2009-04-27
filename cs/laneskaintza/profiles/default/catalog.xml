@@ -1,0 +1,9 @@
+<object name="portal_catalog" meta_type="Plone Catalog Tool">
+
+    <index name="laneskaintza_situation" meta_type="FieldIndex">
+        <indexed_attr value="getSituation"/>
+    </index>
+    <column value="situation" />
+    
+</object>
+
