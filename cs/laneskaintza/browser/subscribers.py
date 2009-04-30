@@ -5,7 +5,7 @@ from BTrees.OOBTree import OOBTree
 from urllib import urlopen
 def laneskaintza_created(object, event):
     
-    import pdb;pdb.set_trace()
+    #import pdb;pdb.set_trace()
     
     if not object.getFolderContents({'portal_type':'FormFolder'}):
         aita=aq_parent(object)
