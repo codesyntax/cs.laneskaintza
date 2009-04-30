@@ -10,7 +10,7 @@
             Title
             </metal:field>
   	</h1>
-  <tal:condition condition="python: here.getSituation() in ['zabalik','abierto']">
+  <tal:condition condition="view/request_form">
   <h2><a i18n:domain= "cs.laneskaintza" i18n:translate="alta-eman" tal:attributes="href string:${here/absolute_url}/alta-eman">Aurkeztu eskaera lan-eskaintza honetan</a></h2></tal:condition>
 
   <dl>

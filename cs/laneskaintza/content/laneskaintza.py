@@ -100,6 +100,14 @@ laneskaintzaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                      label=_(u'situation'),
 		     
                      ),
+                  ),
+   atapi.BooleanField('request_form',
+                  searchable=1,
+		  languageIndependent=0,
+                  widget=atapi.BooleanWidget(
+                     label=_(u'request_form'),
+		     
+                     ),
                   ),	 
   
 ))

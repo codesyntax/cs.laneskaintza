@@ -22,3 +22,11 @@ class laneskaintzaView(BrowserView):
     @property
     def portal(self):
         return getToolByName(self.context, 'portal_url').getPortalObject()
+
+    def request_form(self):
+        #import pdb;pdb.set_trace()
+        
+        if self.context.getRequest_form and self.context.getFolderContents({'portal_type':'FormFolder'}):
+            return True
+        else:
+            return False

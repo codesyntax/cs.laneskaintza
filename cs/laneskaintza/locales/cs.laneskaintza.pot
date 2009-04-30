@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2009-04-27 08:33+0000\n"
+"POT-Creation-Date: 2009-04-30 10:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,8 +39,8 @@ msgid "Description of start_data"
 msgstr ""
 
 #. Default: "Description of the Example Type"
-#: ./profiles/default/types/laneskaintza.xml
 #: ./profiles/default/types/laneskaintzaFolder.xml
+#: ./profiles/default/types/laneskaintza.xml
 msgid "Description of the Example Type"
 msgstr ""
 
@@ -134,6 +134,10 @@ msgstr ""
 #. Default: "Prozesuan"
 #: ./browser/laneskaintzafolderview.pt:16
 msgid "prozesuan"
+msgstr ""
+
+#: ./content/laneskaintza.py:108
+msgid "request_form"
 msgstr ""
 
 #: ./content/laneskaintza.py:100

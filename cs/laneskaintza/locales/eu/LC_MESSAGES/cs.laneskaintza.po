@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2009-04-27 08:33+0000\n"
-"PO-Revision-Date: 2009-04-27 10:54+0100\n"
+"POT-Creation-Date: 2009-04-30 10:43+0000\n"
+"PO-Revision-Date: 2009-04-30 15:11+0100\n"
 "Last-Translator: lur <libargutxi@codesyntax.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -39,8 +39,8 @@ msgid "Description of start_data"
 msgstr "Hasiera data"
 
 #. Default: "Description of the Example Type"
-#: ./profiles/default/types/laneskaintza.xml
 #: ./profiles/default/types/laneskaintzaFolder.xml
+#: ./profiles/default/types/laneskaintza.xml
 msgid "Description of the Example Type"
 msgstr ""
 
@@ -135,6 +135,10 @@ msgstr "laeskaintza karpeta"
 #: ./browser/laneskaintzafolderview.pt:16
 msgid "prozesuan"
 msgstr "Prozesuan"
+
+#: ./content/laneskaintza.py:108
+msgid "request_form"
+msgstr "Alta emateko eskaera formularioa aktibatu"
 
 #: ./content/laneskaintza.py:100
 msgid "situation"
