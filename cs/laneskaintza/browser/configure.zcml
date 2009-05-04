@@ -47,7 +47,7 @@
         for="..interfaces.laneskaintza.Ilaneskaintza
              Products.Archetypes.interfaces._event.IObjectInitializedEvent"
         handler=".subscribers.laneskaintza_created" />
-
+    
     <browser:page
       for="..interfaces.laneskaintzafolder.IlaneskaintzaFolder"
       name="pasted"
