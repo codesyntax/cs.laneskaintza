@@ -13,15 +13,15 @@ def laneskaintza_created(object, event):
     
     formfolder=aita.getFolderContents({'portal_type':'FormFolder'})
     if formfolder:
-        form_title=context.Title() + ' form'
-        form_id='-form'
+        form_title=context.Title()
+        form_id=context.id + '-form'
         
            
         context.invokeFactory(id=form_id, type_name='FormFolder')
             
         formularioa=getattr(context, form_id)
         formularioa.setTitle(form_title)
-        formularioa._renameAfterCreation()
+
         formularioko_fields=formularioa.getFolderContents({'language':context.REQUEST.LANGUAGE}, full_objects=1)
         form_list=[]
         for i in formularioko_fields:
@@ -39,7 +39,12 @@ def laneskaintza_created(object, event):
         
         eskertze_orria=formularioa.getFolderContents({'portal_type':'CodeFormThanksPage'})[0].id
         formularioa.setThanksPage(eskertze_orria)
+        #import pdb;pdb.set_trace()
         
+        if context.REQUEST.LANGUAGE=="es":
+            formularioa.setSubmitLabel('enviar')
+        else:
+            formularioa.setSubmitLabel('bidali')
         """   
         copy_object=aita.manage_copyObjects(ids=[formfolder[0].getObject().id])
         object.manage_pasteObjects(copy_object)
