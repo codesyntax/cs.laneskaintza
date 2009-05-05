@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2009-04-30 10:43+0000\n"
+"POT-Creation-Date: 2009-05-05 09:04+0000\n"
 "PO-Revision-Date: 2009-04-30 15:11+0100\n"
 "Last-Translator: lur <libargutxi@codesyntax.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,6 +22,22 @@ msgstr ""
 msgid "Description of end_data"
 msgstr "Bukaera data"
 
+#: ./content/laneskaintza.py:80
+msgid "Description of file_enrolled"
+msgstr ""
+
+#: ./content/laneskaintza.py:96
+msgid "Description of file_exercise_results"
+msgstr ""
+
+#: ./content/laneskaintza.py:88
+msgid "Description of file_exercises"
+msgstr ""
+
+#: ./content/laneskaintza.py:72
+msgid "Description of file_information"
+msgstr ""
+
 #: ./content/laneskaintza.py:27
 msgid "Description of file_number"
 msgstr "Espediente zenbakia"
@@ -29,6 +45,14 @@ msgstr "Espediente zenbakia"
 #: ./content/laneskaintza.py:37
 msgid "Description of information"
 msgstr "Informazio gehiago"
+
+#: ./content/laneskaintza.py:114
+msgid "Description of request_form"
+msgstr ""
+
+#: ./content/laneskaintza.py:105
+msgid "Description of situation"
+msgstr ""
 
 #: ./content/laneskaintzafolder.py:37
 msgid "Description of situation_source"
@@ -62,15 +86,15 @@ msgstr "Kontaktua"
 msgid "end_data"
 msgstr "Bukaera data"
 
-#: ./content/laneskaintza.py:78
+#: ./content/laneskaintza.py:79
 msgid "file_enrolled"
 msgstr "Onartutakoen eta baztertutakoen zerrenda"
 
-#: ./content/laneskaintza.py:92
+#: ./content/laneskaintza.py:95
 msgid "file_exercise_results"
 msgstr "Proben emaitzak"
 
-#: ./content/laneskaintza.py:85
+#: ./content/laneskaintza.py:87
 msgid "file_exercises"
 msgstr "Proben datak eta lekuak"
 
@@ -136,11 +160,11 @@ msgstr "laeskaintza karpeta"
 msgid "prozesuan"
 msgstr "Prozesuan"
 
-#: ./content/laneskaintza.py:108
+#: ./content/laneskaintza.py:113
 msgid "request_form"
 msgstr "Alta emateko eskaera formularioa aktibatu"
 
-#: ./content/laneskaintza.py:100
+#: ./content/laneskaintza.py:104
 msgid "situation"
 msgstr "Egoera"
 
