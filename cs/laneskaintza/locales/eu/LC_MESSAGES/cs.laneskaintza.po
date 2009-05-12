@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2009-05-05 09:04+0000\n"
-"PO-Revision-Date: 2009-04-30 15:11+0100\n"
+"POT-Creation-Date: 2009-05-11 16:00+0000\n"
+"PO-Revision-Date: 2009-05-11 18:00+0100\n"
 "Last-Translator: lur <libargutxi@codesyntax.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -69,7 +69,7 @@ msgid "Description of the Example Type"
 msgstr ""
 
 #. Default: "Aurkeztu eskaera lan-eskaintza honetan"
-#: ./browser/laneskaintzaview.pt:14
+#: ./browser/laneskaintzaview.pt:15
 msgid "alta-eman"
 msgstr "Aurkeztu eskaera lan-eskaintza honetan"
 
@@ -107,7 +107,7 @@ msgid "file_number"
 msgstr "Espediente zenbakia"
 
 #. Default: "Search results"
-#: ./browser/laneskaintzaview.pt:117
+#: ./browser/laneskaintzaview.pt:118
 msgid "heading_search_results"
 msgstr "Emaitza"
 
@@ -115,33 +115,33 @@ msgstr "Emaitza"
 msgid "information"
 msgstr "Informazio gehiago"
 
-#: ./browser/laneskaintzaview.pt:39
+#: ./browser/laneskaintzaview.pt:40
 msgid "label_laneskaintza_contact_information"
 msgstr "Kontaktua"
 
-#: ./browser/laneskaintzaview.pt:34
+#: ./browser/laneskaintzaview.pt:35
 msgid "label_laneskaintza_enddata"
 msgstr "Bukaera data"
 
-#: ./browser/laneskaintzaview.pt:19
+#: ./browser/laneskaintzaview.pt:20
 msgid "label_laneskaintza_file_number"
 msgstr "Espediente zenbakia"
 
-#: ./browser/laneskaintzaview.pt:24
+#: ./browser/laneskaintzaview.pt:25
 msgid "label_laneskaintza_information"
 msgstr "Informazio gehiago"
 
-#: ./browser/laneskaintzaview.pt:29
+#: ./browser/laneskaintzaview.pt:30
 msgid "label_laneskaintza_startdata"
 msgstr "Hasiera data"
 
 #. Default: "Search"
-#: ./browser/laneskaintzaview.pt:110
+#: ./browser/laneskaintzaview.pt:111
 msgid "label_search_id"
 msgstr "Bilatu"
 
 #. Default: "Set search key"
-#: ./browser/laneskaintzaview.pt:94
+#: ./browser/laneskaintzaview.pt:95
 msgid "label_set_search_key"
 msgstr ""
 
