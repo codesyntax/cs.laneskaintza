@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2009-05-11 16:00+0000\n"
-"PO-Revision-Date: 2009-04-30 15:13+0100\n"
+"POT-Creation-Date: 2009-05-25 14:10+0000\n"
+"PO-Revision-Date: 2009-05-25 16:11+0100\n"
 "Last-Translator: lur <libargutxi@codesyntax.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -73,6 +73,11 @@ msgstr ""
 msgid "alta-eman"
 msgstr "Presentar solicitud en esta convocatoria"
 
+#. Default: "Emaitza guztiak"
+#: ./browser/laneskaintzaview.pt:138
+msgid "bilaketa-emaitzak"
+msgstr "Resultados de la busqueda"
+
 #. Default: "Bukatutakoak"
 #: ./browser/laneskaintzafolderview.pt:17
 msgid "bukatutakoak"
@@ -107,13 +112,18 @@ msgid "file_number"
 msgstr "Número de expediente"
 
 #. Default: "Search results"
-#: ./browser/laneskaintzaview.pt:118
+#: ./browser/laneskaintzaview.pt:117
 msgid "heading_search_results"
 msgstr "Resultado"
 
 #: ./content/laneskaintza.py:36
 msgid "information"
 msgstr "Más información"
+
+#. Default: "Code number: 15398248R"
+#: ./browser/laneskaintzaview.pt:106
+msgid "label_identification_number"
+msgstr "Para ver los resultados introduzca su código"
 
 #: ./browser/laneskaintzaview.pt:40
 msgid "label_laneskaintza_contact_information"
@@ -136,7 +146,7 @@ msgid "label_laneskaintza_startdata"
 msgstr "Fecha de inicio"
 
 #. Default: "Search"
-#: ./browser/laneskaintzaview.pt:111
+#: ./browser/laneskaintzaview.pt:110
 msgid "label_search_id"
 msgstr "Buscar"
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2009-05-11 16:00+0000\n"
+"POT-Creation-Date: 2009-05-25 14:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -73,6 +73,11 @@ msgstr ""
 msgid "alta-eman"
 msgstr ""
 
+#. Default: "Emaitza guztiak"
+#: ./browser/laneskaintzaview.pt:138
+msgid "bilaketa-emaitzak"
+msgstr ""
+
 #. Default: "Bukatutakoak"
 #: ./browser/laneskaintzafolderview.pt:17
 msgid "bukatutakoak"
@@ -107,12 +112,17 @@ msgid "file_number"
 msgstr ""
 
 #. Default: "Search results"
-#: ./browser/laneskaintzaview.pt:118
+#: ./browser/laneskaintzaview.pt:117
 msgid "heading_search_results"
 msgstr ""
 
 #: ./content/laneskaintza.py:36
 msgid "information"
+msgstr ""
+
+#. Default: "Code number: 15398248R"
+#: ./browser/laneskaintzaview.pt:106
+msgid "label_identification_number"
 msgstr ""
 
 #: ./browser/laneskaintzaview.pt:40
@@ -136,7 +146,7 @@ msgid "label_laneskaintza_startdata"
 msgstr ""
 
 #. Default: "Search"
-#: ./browser/laneskaintzaview.pt:111
+#: ./browser/laneskaintzaview.pt:110
 msgid "label_search_id"
 msgstr ""
 

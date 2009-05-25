@@ -68,7 +68,7 @@ laneskaintzaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                   searchable=0,
 		  languageIndependent=1,
                   widget=atapi.FileWidget(
-                     label=_(u'file_information'),
+                     label=_(u"file_information"),
                      description=_(u"Description of file_information"),
                      ),
                   ),
@@ -76,7 +76,7 @@ laneskaintzaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                   searchable=0,
 		  languageIndependent=1,
                   widget=atapi.FileWidget(
-                     label=_(u'file_enrolled'),
+                     label=_(u"file_enrolled"),
                      description=_(u"Description of file_enrolled"),
                      ),
                   ),
@@ -84,7 +84,7 @@ laneskaintzaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                   searchable=0,
 		  languageIndependent=1,
                   widget=atapi.FileWidget(
-                     label=_(u'file_exercises'),
+                     label=_(u"file_exercises"),
                      description=_(u"Description of file_exercises"),
                      ),
                   ),
@@ -92,7 +92,7 @@ laneskaintzaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                   searchable=0,
 		  languageIndependent=1,
                   widget=atapi.FileWidget(
-                     label=_(u'file_exercise_results'),
+                     label=_(u"file_exercise_results"),
                      description=_(u"Description of file_exercise_results"),
                      ),
                   ),
@@ -101,7 +101,7 @@ laneskaintzaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
 		  languageIndependent=0,
 		  vocabulary='whichsituation',
                   widget=atapi.SelectionWidget(
-                     label=_(u'situation'),
+                     label=_(u"situation"),
                      description=_(u"Description of situation"),
 		     
                      ),
@@ -110,7 +110,7 @@ laneskaintzaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                   searchable=1,
 		  languageIndependent=0,
                   widget=atapi.BooleanWidget(
-                     label=_(u'request_form'),
+                     label=_(u"request_form"),
                      description=_(u"Description of request_form"),
 		     
                      ),

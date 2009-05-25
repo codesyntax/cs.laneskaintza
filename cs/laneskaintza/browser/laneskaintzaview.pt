@@ -105,7 +105,6 @@
           <form action="." method="get">
             <label 
                 for="id_number"
-                i18n:domain="LanEskaintza"
                 i18n:translate="label_identification_number">Code number: 15398248R</label>
             <input type="text" id="id_number" name="id_number"/>
             <input type="submit" i18n:attributes="value label_search_id"
@@ -136,7 +135,7 @@
                 </td>
               </tr>
             </table>
-            <a i18n:domain="arrasate.theme" i18n:translate="" tal:attributes="href python:here.aq_parent.absolute_url() + '/at_download/file_exercise_results'">Emaitza guztiak</a>
+            <a i18n:translate="bilaketa-emaitzak" tal:attributes="href python:here.aq_parent.absolute_url() + '/at_download/file_exercise_results'">Emaitza guztiak</a>
 	    </tal:define>
           </tal:block>
         </tal:search>

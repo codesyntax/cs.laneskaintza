@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2009-05-11 16:00+0000\n"
-"PO-Revision-Date: 2009-05-11 18:00+0100\n"
+"POT-Creation-Date: 2009-05-25 14:10+0000\n"
+"PO-Revision-Date: 2009-05-25 16:10+0100\n"
 "Last-Translator: lur <libargutxi@codesyntax.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -73,6 +73,11 @@ msgstr ""
 msgid "alta-eman"
 msgstr "Aurkeztu eskaera lan-eskaintza honetan"
 
+#. Default: "Emaitza guztiak"
+#: ./browser/laneskaintzaview.pt:138
+msgid "bilaketa-emaitzak"
+msgstr "Bilaketaren emaitzak"
+
 #. Default: "Bukatutakoak"
 #: ./browser/laneskaintzafolderview.pt:17
 msgid "bukatutakoak"
@@ -88,32 +93,37 @@ msgstr "Bukaera data"
 
 #: ./content/laneskaintza.py:79
 msgid "file_enrolled"
-msgstr "Onartutakoen eta baztertutakoen zerrenda"
+msgstr "Oinarri espezifikoak"
 
 #: ./content/laneskaintza.py:95
 msgid "file_exercise_results"
-msgstr "Proben emaitzak"
+msgstr "Prozesuko emaitzak"
 
 #: ./content/laneskaintza.py:87
 msgid "file_exercises"
-msgstr "Proben datak eta lekuak"
+msgstr "Prozesuko argibideak"
 
 #: ./content/laneskaintza.py:71
 msgid "file_information"
-msgstr "Deialdiaren oinarriak"
+msgstr "Oinarri orokorrak"
 
 #: ./content/laneskaintza.py:26
 msgid "file_number"
 msgstr "Espediente zenbakia"
 
 #. Default: "Search results"
-#: ./browser/laneskaintzaview.pt:118
+#: ./browser/laneskaintzaview.pt:117
 msgid "heading_search_results"
 msgstr "Emaitza"
 
 #: ./content/laneskaintza.py:36
 msgid "information"
 msgstr "Informazio gehiago"
+
+#. Default: "Code number: 15398248R"
+#: ./browser/laneskaintzaview.pt:106
+msgid "label_identification_number"
+msgstr "Sartu zure kode pribatua"
 
 #: ./browser/laneskaintzaview.pt:40
 msgid "label_laneskaintza_contact_information"
@@ -136,7 +146,7 @@ msgid "label_laneskaintza_startdata"
 msgstr "Hasiera data"
 
 #. Default: "Search"
-#: ./browser/laneskaintzaview.pt:111
+#: ./browser/laneskaintzaview.pt:110
 msgid "label_search_id"
 msgstr "Bilatu"
 
@@ -162,11 +172,11 @@ msgstr "Prozesuan"
 
 #: ./content/laneskaintza.py:113
 msgid "request_form"
-msgstr "Alta emateko eskaera formularioa aktibatu"
+msgstr "Izen emate formularioa"
 
 #: ./content/laneskaintza.py:104
 msgid "situation"
-msgstr "Egoera"
+msgstr "Prozesuaren egoera"
 
 #: ./content/laneskaintzafolder.py:36
 msgid "situation_source"
