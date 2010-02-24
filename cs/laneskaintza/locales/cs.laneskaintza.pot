@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2009-05-25 14:10+0000\n"
+"POT-Creation-Date: 2010-02-24 14:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,51 +14,55 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
-#: ./content/laneskaintzafolder.py:24
+#: ./content/laneskaintzafolder.py:27
 msgid "Description of contact_information"
 msgstr ""
 
-#: ./content/laneskaintza.py:64
+#: ./content/laneskaintza.py:66
 msgid "Description of end_data"
 msgstr ""
 
-#: ./content/laneskaintza.py:80
+#: ./content/laneskaintza.py:82
 msgid "Description of file_enrolled"
 msgstr ""
 
-#: ./content/laneskaintza.py:96
+#: ./content/laneskaintza.py:107
 msgid "Description of file_exercise_results"
 msgstr ""
 
-#: ./content/laneskaintza.py:88
+#: ./content/laneskaintza.py:99
 msgid "Description of file_exercises"
 msgstr ""
 
-#: ./content/laneskaintza.py:72
+#: ./content/laneskaintza.py:74
 msgid "Description of file_information"
 msgstr ""
 
-#: ./content/laneskaintza.py:27
+#: ./content/laneskaintza.py:29
 msgid "Description of file_number"
 msgstr ""
 
-#: ./content/laneskaintza.py:37
+#: ./content/laneskaintza.py:91
+msgid "Description of final_file_enrolled"
+msgstr ""
+
+#: ./content/laneskaintza.py:39
 msgid "Description of information"
 msgstr ""
 
-#: ./content/laneskaintza.py:114
+#: ./content/laneskaintza.py:125
 msgid "Description of request_form"
 msgstr ""
 
-#: ./content/laneskaintza.py:105
+#: ./content/laneskaintza.py:116
 msgid "Description of situation"
 msgstr ""
 
-#: ./content/laneskaintzafolder.py:37
+#: ./content/laneskaintzafolder.py:40
 msgid "Description of situation_source"
 msgstr ""
 
-#: ./content/laneskaintza.py:51
+#: ./content/laneskaintza.py:53
 msgid "Description of start_data"
 msgstr ""
 
@@ -79,36 +83,40 @@ msgid "bilaketa-emaitzak"
 msgstr ""
 
 #. Default: "Bukatutakoak"
-#: ./browser/laneskaintzafolderview.pt:17
+#: ./browser/pasted.pt:20
 msgid "bukatutakoak"
 msgstr ""
 
-#: ./content/laneskaintzafolder.py:23
+#: ./content/laneskaintzafolder.py:26
 msgid "contact_information"
 msgstr ""
 
-#: ./content/laneskaintza.py:63
+#: ./content/laneskaintza.py:65
 msgid "end_data"
 msgstr ""
 
-#: ./content/laneskaintza.py:79
+#: ./content/laneskaintza.py:81
 msgid "file_enrolled"
 msgstr ""
 
-#: ./content/laneskaintza.py:95
+#: ./content/laneskaintza.py:106
 msgid "file_exercise_results"
 msgstr ""
 
-#: ./content/laneskaintza.py:87
+#: ./content/laneskaintza.py:98
 msgid "file_exercises"
 msgstr ""
 
-#: ./content/laneskaintza.py:71
+#: ./content/laneskaintza.py:73
 msgid "file_information"
 msgstr ""
 
-#: ./content/laneskaintza.py:26
+#: ./content/laneskaintza.py:28
 msgid "file_number"
+msgstr ""
+
+#: ./content/laneskaintza.py:90
+msgid "final_file_enrolled"
 msgstr ""
 
 #. Default: "Search results"
@@ -116,7 +124,7 @@ msgstr ""
 msgid "heading_search_results"
 msgstr ""
 
-#: ./content/laneskaintza.py:36
+#: ./content/laneskaintza.py:38
 msgid "information"
 msgstr ""
 
@@ -166,28 +174,28 @@ msgid "laneskaintzaFolder"
 msgstr ""
 
 #. Default: "Prozesuan"
-#: ./browser/laneskaintzafolderview.pt:16
+#: ./browser/pasted.pt:19
 msgid "prozesuan"
 msgstr ""
 
-#: ./content/laneskaintza.py:113
+#: ./content/laneskaintza.py:124
 msgid "request_form"
 msgstr ""
 
-#: ./content/laneskaintza.py:104
+#: ./content/laneskaintza.py:115
 msgid "situation"
 msgstr ""
 
-#: ./content/laneskaintzafolder.py:36
+#: ./content/laneskaintzafolder.py:39
 msgid "situation_source"
 msgstr ""
 
-#: ./content/laneskaintza.py:50
+#: ./content/laneskaintza.py:52
 msgid "start_data"
 msgstr ""
 
 #. Default: "Alta emateko zabalik daudenak"
-#: ./browser/laneskaintzafolderview.pt:15
+#: ./browser/pasted.pt:18
 msgid "zabalik"
 msgstr ""
 

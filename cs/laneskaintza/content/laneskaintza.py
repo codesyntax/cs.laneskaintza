@@ -82,6 +82,15 @@ laneskaintzaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                      description=_(u"Description of file_enrolled"),
                      ),
                   ),
+
+   atapi.FileField('final_file_enrolled',
+                  searchable=0,
+		  languageIndependent=1,
+                  widget=atapi.FileWidget(
+                     label=_(u"final_file_enrolled"),
+                     description=_(u"Description of final_file_enrolled"),
+                     ),
+                  ),
    atapi.FileField('file_exercises',
                   searchable=0,
 		  languageIndependent=1,
