@@ -11,15 +11,9 @@
             </metal:field>
   	</h1>
   <div class="laneskaintzaview">
-  <tal:condition condition="view/request_form">
-  <h2><a i18n:domain= "cs.laneskaintza" i18n:translate="alta-eman" tal:attributes="href string:${here/absolute_url}/${here/id}-form">Aurkeztu eskaera lan-eskaintza honetan</a></h2></tal:condition>
+  
 
   <dl>
-
-	<tal:block tal:define="file_number python: here.getFile_number()" tal:condition="file_number">
-	<dt i18n:translate="label_laneskaintza_file_number"></dt>
-	<dd tal:define="file_number python:here.getFile_number()" tal:content="file_number"></dd>
-	</tal:block>
 
 	<tal:block tal:define="information python: here.getInformation()" tal:condition="information">
 	<dt i18n:translate="label_laneskaintza_information"></dt>
@@ -47,7 +41,7 @@
    
    <tal:files 
         define="field_macro field_macro | here/widgets/field/macros/base_view" 
-        repeat="field python:[here.getField(f) for f in ['file_information', 'file_enrolled', 'final_file_enrolled', 'file_exercises']]"> 
+        repeat="field python:[here.getField(f) for f in ['file_information', 'file_enrolled', 'final_file_enrolled', 'file_exercises', 'modelo_instancia']]"> 
 	 	         
       <tal:if_visible define="mode string:view; 
                               accessor nocall:field/accessor;
@@ -70,77 +64,14 @@
         
         <tal:if_visible define="mode string:view;
                                   visState python:field.widget.isVisible(here, mode);
-                                  visCondition python:field.widget.testCondition(here, portal, template) and field.get_size(here);"
+                                  visCondition python:field.widget.testCondition(here, portal, template) and field.get_size(here);
+                                  label_macro here/aq_parent/laneskaintza_general/macros/titlelabel; "
+                                   
                         condition="python:visState == 'visible' and visCondition">
           <metal:use_field use-macro="field_macro" />
         </tal:if_visible>
         </tal:block>
       </tal:otherfiles>
-    <tal:csvfinder define="contentFilter python:{'portal_type':'csvfinder'}"
-                   repeat="obj python:here.getFolderContents(contentFilter, full_objects=1)">
-      <tal:block
-          define="here nocall:obj;
-                  field_macro field_macro | here/widgets/field/macros/view"
-          repeat="field python:[here.getField(f) for f in ['file']]">
-        
-        <tal:if_visible define="mode string:view;
-                                visState python:field.widget.isVisible(here, mode);
-                                visCondition python:field.widget.testCondition(here, portal, template) and field.get_size(here);"
-                        condition="python:visState == 'visible' and
-                                   visCondition and not isAnon">
-          <metal:use_field use-macro="field_macro" />
-        </tal:if_visible>
-        
-        <tal:search condition="not:python:obj.getKeyField() or isAnon">
-          <a href="#" tal:attributes="href
-                                      string:${obj/absolute_url}/set.html"
-             i18n:translate="label_set_search_key">
-            Set search key
-          </a>
-        </tal:search>
-
-
-        <tal:search condition="obj/getKeyField">
-        
-          <form action="." method="get">
-            <label 
-                for="id_number"
-                i18n:translate="label_identification_number">Code number: 15398248R</label>
-            <input type="text" id="id_number" name="id_number"/>
-            <input type="submit" i18n:attributes="value label_search_id"
-                   value="Search"/>
-          </form>
-          
-          <tal:block
-              tal:condition="request/id_number|nothing">
-
-            <h3 i18n:translate="heading_search_results">Search results</h3>
-	    <tal:define tal:condition="results"
-                 tal:define="id_number python: request.get('id_number', ''); 
-                             item nocall:obj;
-                             headers python:item.getFieldHeaders(); 
-                             results python:item.search(id_number);">
-            <table class="listing">
-              <tr>
-                <th tal:repeat="header headers"
-                    tal:content="header">
-                  Header
-                </th>
-              </tr>
-              
-              <tr tal:repeat="result results">
-                <td tal:repeat="header headers"
-                    tal:content="python:result.get(header, '')">
-                  result
-                </td>
-              </tr>
-            </table>
-            <a i18n:translate="bilaketa-emaitzak" tal:attributes="href python:here.aq_parent.absolute_url() + '/at_download/file_exercise_results'">Emaitza guztiak</a>
-	    </tal:define>
-          </tal:block>
-        </tal:search>
-      </tal:block>
-    </tal:csvfinder>
             
     </div>
         </tal:main-macro>

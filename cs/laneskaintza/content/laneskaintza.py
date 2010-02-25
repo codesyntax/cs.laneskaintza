@@ -16,19 +16,7 @@ from cs.laneskaintza.config import PROJECTNAME
 laneskaintzaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
 
     # -*- Your Archetypes field definitions here ... -*-
-    atapi.StringField(
-        name='file_number',
-        required=False,
-        languageIndependent=1,
-	storage=atapi.AnnotationStorage(),
-        #searchable=1,
-        #default='',
-        #schemata ='default',
-        widget=atapi.StringWidget(
-            label=_(u"file_number"),
-            description=_(u"Description of file_number"),
-        ),
-    ),
+   
     atapi.TextField('information',
                         required=False,
                         searchable=True,
@@ -107,6 +95,15 @@ laneskaintzaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                      description=_(u"Description of file_exercise_results"),
                      ),
                   ),
+
+   atapi.FileField('modelo_instancia',
+                  searchable=0,
+		  languageIndependent=1,
+                  widget=atapi.FileWidget(
+                     label=_(u"modelo_instancia"),
+                     description=_(u"Description of modelo_instancia"),
+                     ),
+                  ),
    atapi.StringField('situation',
                   searchable=1,
 		  languageIndependent=0,
@@ -117,15 +114,6 @@ laneskaintzaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
 		     
                      ),
                   ),
-   atapi.BooleanField('request_form',
-                  searchable=1,
-		  languageIndependent=0,
-                  widget=atapi.BooleanWidget(
-                     label=_(u"request_form"),
-                     description=_(u"Description of request_form"),
-		     
-                     ),
-                  ),	 
   
 ))
 
