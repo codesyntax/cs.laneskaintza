@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-02-24 14:31+0000\n"
-"PO-Revision-Date: 2010-02-24 16:13+0100\n"
+"POT-Creation-Date: 2010-02-25 14:55+0000\n"
+"PO-Revision-Date: 2010-02-25 15:57+0100\n"
 "Last-Translator: lur <libargutxi@codesyntax.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -18,43 +18,39 @@ msgstr ""
 msgid "Description of contact_information"
 msgstr "Contacto"
 
-#: ./content/laneskaintza.py:66
+#: ./content/laneskaintza.py:54
 msgid "Description of end_data"
 msgstr "Fecha de finalización"
 
-#: ./content/laneskaintza.py:82
+#: ./content/laneskaintza.py:70
 msgid "Description of file_enrolled"
 msgstr ""
 
-#: ./content/laneskaintza.py:107
+#: ./content/laneskaintza.py:95
 msgid "Description of file_exercise_results"
 msgstr ""
 
-#: ./content/laneskaintza.py:99
+#: ./content/laneskaintza.py:87
 msgid "Description of file_exercises"
 msgstr ""
 
-#: ./content/laneskaintza.py:74
+#: ./content/laneskaintza.py:62
 msgid "Description of file_information"
 msgstr ""
 
-#: ./content/laneskaintza.py:29
-msgid "Description of file_number"
-msgstr "Número de expediente"
-
-#: ./content/laneskaintza.py:91
+#: ./content/laneskaintza.py:79
 msgid "Description of final_file_enrolled"
 msgstr ""
 
-#: ./content/laneskaintza.py:39
+#: ./content/laneskaintza.py:27
 msgid "Description of information"
 msgstr "Más información"
 
-#: ./content/laneskaintza.py:125
-msgid "Description of request_form"
+#: ./content/laneskaintza.py:104
+msgid "Description of modelo_instancia"
 msgstr ""
 
-#: ./content/laneskaintza.py:116
+#: ./content/laneskaintza.py:113
 msgid "Description of situation"
 msgstr ""
 
@@ -62,7 +58,7 @@ msgstr ""
 msgid "Description of situation_source"
 msgstr "Estados"
 
-#: ./content/laneskaintza.py:53
+#: ./content/laneskaintza.py:41
 msgid "Description of start_data"
 msgstr "Fecha de inicio"
 
@@ -71,16 +67,6 @@ msgstr "Fecha de inicio"
 #: ./profiles/default/types/laneskaintza.xml
 msgid "Description of the Example Type"
 msgstr ""
-
-#. Default: "Aurkeztu eskaera lan-eskaintza honetan"
-#: ./browser/laneskaintzaview.pt:15
-msgid "alta-eman"
-msgstr "Presentar solicitud en esta convocatoria"
-
-#. Default: "Emaitza guztiak"
-#: ./browser/laneskaintzaview.pt:138
-msgid "bilaketa-emaitzak"
-msgstr "Resultados de la busqueda"
 
 #. Default: "Bukatutakoak"
 #: ./browser/pasted.pt:20
@@ -91,77 +77,49 @@ msgstr "Finalizados"
 msgid "contact_information"
 msgstr "Contacto"
 
-#: ./content/laneskaintza.py:65
+#: ./content/laneskaintza.py:53
 msgid "end_data"
 msgstr "Fecha de finalización"
 
-#: ./content/laneskaintza.py:81
+#: ./content/laneskaintza.py:69
 msgid "file_enrolled"
 msgstr "Lista de admitidos y excluídos provisional"
 
-#: ./content/laneskaintza.py:106
+#: ./content/laneskaintza.py:94
 msgid "file_exercise_results"
 msgstr "Resultado de las pruebas"
 
-#: ./content/laneskaintza.py:98
+#: ./content/laneskaintza.py:86
 msgid "file_exercises"
 msgstr "Fechas y lugares de las pruebas"
 
-#: ./content/laneskaintza.py:73
+#: ./content/laneskaintza.py:61
 msgid "file_information"
 msgstr "Bases de la convocatoria"
 
-#: ./content/laneskaintza.py:28
-msgid "file_number"
-msgstr "Número de expediente"
-
-#: ./content/laneskaintza.py:90
+#: ./content/laneskaintza.py:78
 msgid "final_file_enrolled"
 msgstr "Lista definitiva de admitidos y excluídos"
 
-#. Default: "Search results"
-#: ./browser/laneskaintzaview.pt:117
-msgid "heading_search_results"
-msgstr "Resultado"
-
-#: ./content/laneskaintza.py:38
+#: ./content/laneskaintza.py:26
 msgid "information"
 msgstr "Más información"
 
-#. Default: "Code number: 15398248R"
-#: ./browser/laneskaintzaview.pt:106
-msgid "label_identification_number"
-msgstr "Para ver los resultados introduzca su código"
-
-#: ./browser/laneskaintzaview.pt:40
+#: ./browser/laneskaintzaview.pt:34
 msgid "label_laneskaintza_contact_information"
 msgstr "Contacto"
 
-#: ./browser/laneskaintzaview.pt:35
+#: ./browser/laneskaintzaview.pt:29
 msgid "label_laneskaintza_enddata"
 msgstr "Fecha de finalización"
 
-#: ./browser/laneskaintzaview.pt:20
-msgid "label_laneskaintza_file_number"
-msgstr "Número de expediente"
-
-#: ./browser/laneskaintzaview.pt:25
+#: ./browser/laneskaintzaview.pt:19
 msgid "label_laneskaintza_information"
 msgstr "Más información"
 
-#: ./browser/laneskaintzaview.pt:30
+#: ./browser/laneskaintzaview.pt:24
 msgid "label_laneskaintza_startdata"
 msgstr "Fecha de inicio"
-
-#. Default: "Search"
-#: ./browser/laneskaintzaview.pt:110
-msgid "label_search_id"
-msgstr "Buscar"
-
-#. Default: "Set search key"
-#: ./browser/laneskaintzaview.pt:95
-msgid "label_set_search_key"
-msgstr ""
 
 #. Default: "laneskaintza"
 #: ./profiles/default/types/laneskaintza.xml
@@ -173,16 +131,16 @@ msgstr "Oferta de empleo"
 msgid "laneskaintzaFolder"
 msgstr "Ofertas de empleo"
 
+#: ./content/laneskaintza.py:103
+msgid "modelo_instancia"
+msgstr "Modelo de instancia"
+
 #. Default: "Prozesuan"
 #: ./browser/pasted.pt:19
 msgid "prozesuan"
 msgstr "En proceso"
 
-#: ./content/laneskaintza.py:124
-msgid "request_form"
-msgstr "Activar el formulario de solucitud de alta"
-
-#: ./content/laneskaintza.py:115
+#: ./content/laneskaintza.py:112
 msgid "situation"
 msgstr "Situación"
 
@@ -190,7 +148,7 @@ msgstr "Situación"
 msgid "situation_source"
 msgstr "Estados"
 
-#: ./content/laneskaintza.py:52
+#: ./content/laneskaintza.py:40
 msgid "start_data"
 msgstr "Fecha de inicio"
 

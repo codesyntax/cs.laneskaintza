@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-02-24 14:31+0000\n"
-"PO-Revision-Date: 2010-02-24 15:37+0100\n"
+"POT-Creation-Date: 2010-02-25 14:55+0000\n"
+"PO-Revision-Date: 2010-02-25 15:57+0100\n"
 "Last-Translator: lur <libargutxi@codesyntax.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -18,43 +18,39 @@ msgstr ""
 msgid "Description of contact_information"
 msgstr ""
 
-#: ./content/laneskaintza.py:66
+#: ./content/laneskaintza.py:54
 msgid "Description of end_data"
 msgstr "Bukaera data"
 
-#: ./content/laneskaintza.py:82
+#: ./content/laneskaintza.py:70
 msgid "Description of file_enrolled"
 msgstr ""
 
-#: ./content/laneskaintza.py:107
+#: ./content/laneskaintza.py:95
 msgid "Description of file_exercise_results"
 msgstr ""
 
-#: ./content/laneskaintza.py:99
+#: ./content/laneskaintza.py:87
 msgid "Description of file_exercises"
 msgstr ""
 
-#: ./content/laneskaintza.py:74
+#: ./content/laneskaintza.py:62
 msgid "Description of file_information"
 msgstr ""
 
-#: ./content/laneskaintza.py:29
-msgid "Description of file_number"
-msgstr "Espediente zenbakia"
-
-#: ./content/laneskaintza.py:91
+#: ./content/laneskaintza.py:79
 msgid "Description of final_file_enrolled"
 msgstr ""
 
-#: ./content/laneskaintza.py:39
+#: ./content/laneskaintza.py:27
 msgid "Description of information"
 msgstr "Informazio gehiago"
 
-#: ./content/laneskaintza.py:125
-msgid "Description of request_form"
+#: ./content/laneskaintza.py:104
+msgid "Description of modelo_instancia"
 msgstr ""
 
-#: ./content/laneskaintza.py:116
+#: ./content/laneskaintza.py:113
 msgid "Description of situation"
 msgstr ""
 
@@ -62,7 +58,7 @@ msgstr ""
 msgid "Description of situation_source"
 msgstr "Egoera posibleak"
 
-#: ./content/laneskaintza.py:53
+#: ./content/laneskaintza.py:41
 msgid "Description of start_data"
 msgstr "Hasiera data"
 
@@ -71,16 +67,6 @@ msgstr "Hasiera data"
 #: ./profiles/default/types/laneskaintza.xml
 msgid "Description of the Example Type"
 msgstr ""
-
-#. Default: "Aurkeztu eskaera lan-eskaintza honetan"
-#: ./browser/laneskaintzaview.pt:15
-msgid "alta-eman"
-msgstr "Aurkeztu eskaera lan-eskaintza honetan"
-
-#. Default: "Emaitza guztiak"
-#: ./browser/laneskaintzaview.pt:138
-msgid "bilaketa-emaitzak"
-msgstr "Bilaketaren emaitzak"
 
 #. Default: "Bukatutakoak"
 #: ./browser/pasted.pt:20
@@ -91,77 +77,49 @@ msgstr "Bukatutakoak"
 msgid "contact_information"
 msgstr "Kontaktua"
 
-#: ./content/laneskaintza.py:65
+#: ./content/laneskaintza.py:53
 msgid "end_data"
 msgstr "Bukaera data"
 
-#: ./content/laneskaintza.py:81
+#: ./content/laneskaintza.py:69
 msgid "file_enrolled"
 msgstr "Behin-behineko onartu eta baztertuen zerrenda"
 
-#: ./content/laneskaintza.py:106
+#: ./content/laneskaintza.py:94
 msgid "file_exercise_results"
 msgstr "Prozesuko emaitzak"
 
-#: ./content/laneskaintza.py:98
+#: ./content/laneskaintza.py:86
 msgid "file_exercises"
 msgstr "Prozesuko argibideak"
 
-#: ./content/laneskaintza.py:73
+#: ./content/laneskaintza.py:61
 msgid "file_information"
 msgstr "Oinarri orokorrak"
 
-#: ./content/laneskaintza.py:28
-msgid "file_number"
-msgstr "Espediente zenbakia"
-
-#: ./content/laneskaintza.py:90
+#: ./content/laneskaintza.py:78
 msgid "final_file_enrolled"
-msgstr ""
+msgstr "Behin-betiko onartu eta baztertuen zerrenda"
 
-#. Default: "Search results"
-#: ./browser/laneskaintzaview.pt:117
-msgid "heading_search_results"
-msgstr "Emaitza"
-
-#: ./content/laneskaintza.py:38
+#: ./content/laneskaintza.py:26
 msgid "information"
 msgstr "Informazio gehiago"
 
-#. Default: "Code number: 15398248R"
-#: ./browser/laneskaintzaview.pt:106
-msgid "label_identification_number"
-msgstr "Sartu zure kode pribatua"
-
-#: ./browser/laneskaintzaview.pt:40
+#: ./browser/laneskaintzaview.pt:34
 msgid "label_laneskaintza_contact_information"
 msgstr "Kontaktua"
 
-#: ./browser/laneskaintzaview.pt:35
+#: ./browser/laneskaintzaview.pt:29
 msgid "label_laneskaintza_enddata"
 msgstr "Bukaera data"
 
-#: ./browser/laneskaintzaview.pt:20
-msgid "label_laneskaintza_file_number"
-msgstr "Espediente zenbakia"
-
-#: ./browser/laneskaintzaview.pt:25
+#: ./browser/laneskaintzaview.pt:19
 msgid "label_laneskaintza_information"
 msgstr "Informazio gehiago"
 
-#: ./browser/laneskaintzaview.pt:30
+#: ./browser/laneskaintzaview.pt:24
 msgid "label_laneskaintza_startdata"
 msgstr "Hasiera data"
-
-#. Default: "Search"
-#: ./browser/laneskaintzaview.pt:110
-msgid "label_search_id"
-msgstr "Bilatu"
-
-#. Default: "Set search key"
-#: ./browser/laneskaintzaview.pt:95
-msgid "label_set_search_key"
-msgstr ""
 
 #. Default: "laneskaintza"
 #: ./profiles/default/types/laneskaintza.xml
@@ -173,16 +131,16 @@ msgstr "laneskaintza"
 msgid "laneskaintzaFolder"
 msgstr "laeskaintza karpeta"
 
+#: ./content/laneskaintza.py:103
+msgid "modelo_instancia"
+msgstr "Instantzia eredua"
+
 #. Default: "Prozesuan"
 #: ./browser/pasted.pt:19
 msgid "prozesuan"
 msgstr "Prozesuan"
 
-#: ./content/laneskaintza.py:124
-msgid "request_form"
-msgstr "Izen emate formularioa"
-
-#: ./content/laneskaintza.py:115
+#: ./content/laneskaintza.py:112
 msgid "situation"
 msgstr "Prozesuaren egoera"
 
@@ -190,7 +148,7 @@ msgstr "Prozesuaren egoera"
 msgid "situation_source"
 msgstr "Egoerak"
 
-#: ./content/laneskaintza.py:52
+#: ./content/laneskaintza.py:40
 msgid "start_data"
 msgstr "Hasiera data"
 
