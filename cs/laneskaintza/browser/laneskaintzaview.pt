@@ -70,7 +70,8 @@
         
         <tal:if_visible define="mode string:view;
                                   visState python:field.widget.isVisible(here, mode);
-                                  visCondition python:field.widget.testCondition(here, portal, template) and field.get_size(here);"
+                                  visCondition python:field.widget.testCondition(here, portal, template) and field.get_size(here);
+                                  label_macro here/laneskaintza_general/macros/titlelabel; "
                         condition="python:visState == 'visible' and visCondition">
           <metal:use_field use-macro="field_macro" />
         </tal:if_visible>
