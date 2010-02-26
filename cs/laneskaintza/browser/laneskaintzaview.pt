@@ -41,7 +41,7 @@
    
    <tal:files 
         define="field_macro field_macro | here/widgets/field/macros/base_view" 
-        repeat="field python:[here.getField(f) for f in ['file_information', 'file_enrolled', 'final_file_enrolled', 'file_exercises','file_exercises_results', 'modelo_instancia']]"> 
+        repeat="field python:[here.getField(f) for f in ['file_information', 'file_enrolled', 'final_file_enrolled', 'file_exercises','file_exercise_results', 'modelo_instancia']]"> 
 	 	         
       <tal:if_visible define="mode string:view; 
                               accessor nocall:field/accessor;
