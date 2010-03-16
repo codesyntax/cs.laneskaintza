@@ -26,7 +26,7 @@ class laneskaintzaView(BrowserView):
     def request_form(self):
         #import pdb;pdb.set_trace()
         
-        if self.context.getRequest_form and self.context.getFolderContents({'portal_type':'FormFolder'}) and not self.context.getFolderContents({'portal_type':'csvfinder'}):
+        if self.context.getRequest_form() and self.context.getFolderContents({'portal_type':'FormFolder'}) and not self.context.getFolderContents({'portal_type':'csvfinder'}):
             return True
         else:
             return False
