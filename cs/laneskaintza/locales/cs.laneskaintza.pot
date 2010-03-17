@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-02-24 14:31+0000\n"
+"POT-Creation-Date: 2010-03-17 08:12+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,6 +13,11 @@ msgstr ""
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
+
+#. Default: "Bukatutakoak ${bukatutakoak}"
+#: ./browser/laneskaintzafolderview.pt:18
+msgid "Bukatutakoak ${bukatutakoak}"
+msgstr ""
 
 #: ./content/laneskaintzafolder.py:27
 msgid "Description of contact_information"
@@ -72,18 +77,28 @@ msgstr ""
 msgid "Description of the Example Type"
 msgstr ""
 
+#. Default: "Prozesuan ${prozesuan}"
+#: ./browser/laneskaintzafolderview.pt:17
+msgid "Prozesuan ${prozesuan}"
+msgstr ""
+
+#. Default: "Zabalik ${zabalik}"
+#: ./browser/laneskaintzafolderview.pt:16
+msgid "Zabalik ${zabalik}"
+msgstr ""
+
 #. Default: "Aurkeztu eskaera lan-eskaintza honetan"
 #: ./browser/laneskaintzaview.pt:15
 msgid "alta-eman"
 msgstr ""
 
 #. Default: "Emaitza guztiak"
-#: ./browser/laneskaintzaview.pt:138
+#: ./browser/laneskaintzaview.pt:139
 msgid "bilaketa-emaitzak"
 msgstr ""
 
 #. Default: "Bukatutakoak"
-#: ./browser/pasted.pt:20
+#: ./browser/pasted.pt:21
 msgid "bukatutakoak"
 msgstr ""
 
@@ -120,7 +135,7 @@ msgid "final_file_enrolled"
 msgstr ""
 
 #. Default: "Search results"
-#: ./browser/laneskaintzaview.pt:117
+#: ./browser/laneskaintzaview.pt:118
 msgid "heading_search_results"
 msgstr ""
 
@@ -129,7 +144,7 @@ msgid "information"
 msgstr ""
 
 #. Default: "Code number: 15398248R"
-#: ./browser/laneskaintzaview.pt:106
+#: ./browser/laneskaintzaview.pt:107
 msgid "label_identification_number"
 msgstr ""
 
@@ -154,12 +169,12 @@ msgid "label_laneskaintza_startdata"
 msgstr ""
 
 #. Default: "Search"
-#: ./browser/laneskaintzaview.pt:110
+#: ./browser/laneskaintzaview.pt:111
 msgid "label_search_id"
 msgstr ""
 
 #. Default: "Set search key"
-#: ./browser/laneskaintzaview.pt:95
+#: ./browser/laneskaintzaview.pt:96
 msgid "label_set_search_key"
 msgstr ""
 
@@ -174,7 +189,7 @@ msgid "laneskaintzaFolder"
 msgstr ""
 
 #. Default: "Prozesuan"
-#: ./browser/pasted.pt:19
+#: ./browser/pasted.pt:20
 msgid "prozesuan"
 msgstr ""
 
@@ -195,7 +210,7 @@ msgid "start_data"
 msgstr ""
 
 #. Default: "Alta emateko zabalik daudenak"
-#: ./browser/pasted.pt:18
+#: ./browser/pasted.pt:19
 msgid "zabalik"
 msgstr ""
 
