@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-03-17 08:12+0000\n"
-"PO-Revision-Date: 2010-03-17 09:14+0100\n"
+"POT-Creation-Date: 2010-03-17 08:33+0000\n"
+"PO-Revision-Date: 2010-03-17 09:34+0100\n"
 "Last-Translator: lur <libargutxi@codesyntax.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -55,11 +55,15 @@ msgstr ""
 msgid "Description of information"
 msgstr "Más información"
 
-#: ./content/laneskaintza.py:125
+#: ./content/laneskaintza.py:117
+msgid "Description of main_bases"
+msgstr ""
+
+#: ./content/laneskaintza.py:137
 msgid "Description of request_form"
 msgstr ""
 
-#: ./content/laneskaintza.py:116
+#: ./content/laneskaintza.py:128
 msgid "Description of situation"
 msgstr ""
 
@@ -188,16 +192,20 @@ msgstr "Oferta de empleo"
 msgid "laneskaintzaFolder"
 msgstr "Ofertas de empleo"
 
+#: ./content/laneskaintza.py:116
+msgid "main_bases"
+msgstr "Bases especificas"
+
 #. Default: "Prozesuan"
 #: ./browser/pasted.pt:20
 msgid "prozesuan"
 msgstr "En proceso"
 
-#: ./content/laneskaintza.py:124
+#: ./content/laneskaintza.py:136
 msgid "request_form"
 msgstr "Activar el formulario de solucitud de alta"
 
-#: ./content/laneskaintza.py:115
+#: ./content/laneskaintza.py:127
 msgid "situation"
 msgstr "Situación"
 

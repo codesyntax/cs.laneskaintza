@@ -107,6 +107,18 @@ laneskaintzaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                      description=_(u"Description of file_exercise_results"),
                      ),
                   ),
+
+
+   atapi.FileField('main_bases',
+                  searchable=0,
+		  languageIndependent=1,
+                  widget=atapi.FileWidget(
+                     label=_(u"main_bases"),
+                     description=_(u"Description of main_bases"),
+                     ),
+                  ),
+
+    
    atapi.StringField('situation',
                   searchable=1,
 		  languageIndependent=0,
