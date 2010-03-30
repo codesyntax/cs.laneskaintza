@@ -12,8 +12,10 @@ def laneskaintza_created(object, event):
     aita=aq_parent(context)
     
     formfolder=aita.getFolderContents({'portal_type':'FormFolder'})
+    #import pdb;pdb.set_trace()
+    
     if formfolder:
-        form_title=context.Title()
+        form_title=context.Title() + '-form'
         form_id=context.id + '-form'
         
            
@@ -45,6 +47,7 @@ def laneskaintza_created(object, event):
             formularioa.setSubmitLabel('enviar')
         else:
             formularioa.setSubmitLabel('bidali')
+        formularioa._renameAfterCreation()
         """   
         copy_object=aita.manage_copyObjects(ids=[formfolder[0].getObject().id])
         object.manage_pasteObjects(copy_object)
