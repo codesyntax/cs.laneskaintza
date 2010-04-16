@@ -1,0 +1,33 @@
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      i18n:domain="cs.laneskaintza">
+
+<head></head>
+
+<body>
+
+  <metal:label_macro metal:define-macro="label">
+    <dt>
+      <span i18n:translate="" tal:content="python:widget.Label(here)"
+            tal:omit-tag="">Field</span>
+    </dt>
+  </metal:label_macro>
+
+  <metal:label_macro metal:define-macro="titlelabel">
+    <label tal:content="here/Title">
+    </label><br/>
+  </metal:label_macro>
+
+
+  <metal:data_macro metal:define-macro="data">
+    <dd>
+      <metal:file use-macro="here/widgets/file/macros/file_view" />
+    </dd>
+  </metal:data_macro>
+
+
+</body>
+</html>

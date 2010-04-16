@@ -1,0 +1,30 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    i18n_domain="cs.laneskaintza">
+
+  <!-- configure your content components here -->
+  
+  <!-- -*- extra stuff goes here -*- -->
+  <class class=".laneskaintzafolder.laneskaintzaFolder">
+    <require
+        permission="zope2.View"
+        interface="..interfaces.IlaneskaintzaFolder"
+        />
+    <require
+        permission="cmf.ModifyPortalContent"
+        set_schema="..interfaces.IlaneskaintzaFolder"
+        />
+  </class>
+  <class class=".laneskaintza.laneskaintza">
+    <require
+        permission="zope2.View"
+        interface="..interfaces.Ilaneskaintza"
+        />
+    <require
+        permission="cmf.ModifyPortalContent"
+        set_schema="..interfaces.Ilaneskaintza"
+        />
+  </class>
+
+</configure>
