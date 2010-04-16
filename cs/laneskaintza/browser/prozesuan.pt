@@ -36,7 +36,9 @@
         
         </tal:listing>
 	</div>
-        <div metal:use-macro="here/batch_macros/macros/navigation" />
+        <tal:base define="batch_base_url string:prozesuan">
+          <div metal:use-macro="here/batch_macros/macros/navigation" />
+        </tal:base>
         </metal:listingmacro>
         </tal:foldercontents>
         
