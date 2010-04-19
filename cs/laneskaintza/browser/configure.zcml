@@ -43,6 +43,15 @@
       allowed_attributes="laneskaintza_lista"
 	
       />
+
+    <browser:page
+      name="laneskaintza_kopurua"
+      for="*"
+      class=".laneskaintza_kopurua.Kopurua"
+      permission="zope2.View"
+      allowed_attributes="laneskaintza_kopurua"
+	
+      />
     <subscriber
         for="..interfaces.laneskaintza.Ilaneskaintza
              Products.Archetypes.interfaces._event.IObjectInitializedEvent"

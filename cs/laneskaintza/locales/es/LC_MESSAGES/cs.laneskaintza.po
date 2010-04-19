@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2010-03-17 08:33+0000\n"
-"PO-Revision-Date: 2010-03-17 09:34+0100\n"
+"PO-Revision-Date: 2010-04-19 17:20+0100\n"
 "Last-Translator: lur <libargutxi@codesyntax.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -94,7 +94,7 @@ msgstr "Abierto ${zabalik}"
 #. Default: "Aurkeztu eskaera lan-eskaintza honetan"
 #: ./browser/laneskaintzaview.pt:15
 msgid "alta-eman"
-msgstr "Presentar solicitud en esta convocatoria"
+msgstr "Solicitud de admisión  (on-line)"
 
 #. Default: "Emaitza guztiak"
 #: ./browser/laneskaintzaview.pt:139
