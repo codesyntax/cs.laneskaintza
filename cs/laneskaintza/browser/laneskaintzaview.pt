@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
       lang="en"
       metal:use-macro="here/main_template/macros/master"
@@ -47,7 +48,7 @@
    
    <tal:files 
         define="field_macro field_macro | here/widgets/field/macros/base_view" 
-        repeat="field python:[here.getField(f) for f in ['file_information', 'main_bases', 'file_enrolled', 'final_file_enrolled', 'file_exercises', 'file_exercise_results']]"> 
+        repeat="field python:[here.getField(f) for f in ['file_information', 'main_bases', 'instance', 'file_enrolled', 'final_file_enrolled', 'file_exercises', 'file_exercise_results']]"> 
 	 	         
       <tal:if_visible define="mode string:view; 
                               accessor nocall:field/accessor;
