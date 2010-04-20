@@ -15,7 +15,7 @@ def laneskaintza_created(object, event):
     #import pdb;pdb.set_trace()
     
     if formfolder:
-        form_title=context.Title() + '-form'
+        form_title=context.Title()
         form_id=context.id + '-form'
         
            
@@ -47,13 +47,4 @@ def laneskaintza_created(object, event):
             formularioa.setSubmitLabel('enviar')
         else:
             formularioa.setSubmitLabel('bidali')
-        formularioa._renameAfterCreation()
-        """   
-        copy_object=aita.manage_copyObjects(ids=[formfolder[0].getObject().id])
-        object.manage_pasteObjects(copy_object)
-        formularioa=getattr(context, 'alta-eman')
-        formularioa.setTitle(context.id + ' form')
-        formularioa._renameAfterCreation()
-        formularioa.setLanguage(context.REQUEST.LANGUAGE)
-        formularioa.reindexObject()
-        """
+        
