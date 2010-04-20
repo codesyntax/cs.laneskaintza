@@ -31,13 +31,20 @@ def laneskaintza_created(object, event):
         formularioa.manage_delObjects(form_list)
         barrukoak=formfolder[0].getObject().getFolderContents({'language':object.REQUEST.LANGUAGE}, full_objects=1)
         lista=[]
+        #import pdb;pdb.set_trace()
         for i in barrukoak:
             lista.append(i.id)
         copy_object=formfolder[0].getObject().manage_copyObjects(ids=lista)
         formularioa.manage_pasteObjects(copy_object)
+        
+        bidaltzailea=formularioa.getFolderContents({'portal_type':'XMLMailerAdapter'})[0]
         #import pdb;pdb.set_trace()
-        bidaltzailea=formularioa.getFolderContents({'portal_type':'XMLMailerAdapter'})[0].id
-        formularioa.setActionAdapter(bidaltzailea)
+        
+        if context.REQUEST.LANGUAGE == "eu":
+            bidaltzailea.getObject().setMsg_subject("Lan Eskaintzan alta: " + context.Title())
+        else:
+            bidaltzailea.getObject().setMsg_subject("Alta oferta de empleo: " + context.Title())
+        formularioa.setActionAdapter(bidaltzailea.id)
         
         eskertze_orria=formularioa.getFolderContents({'portal_type':'CodeFormThanksPage'})[0].id
         formularioa.setThanksPage(eskertze_orria)
