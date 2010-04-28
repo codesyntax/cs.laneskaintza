@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2010-04-19 15:48+0000\n"
-"PO-Revision-Date: 2010-04-19 17:52+0100\n"
+"PO-Revision-Date: 2010-04-28 16:50+0100\n"
 "Last-Translator: lur <libargutxi@codesyntax.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -98,7 +98,7 @@ msgstr ""
 #. Default: "Aurkeztu eskaera lan-eskaintza honetan"
 #: ./browser/laneskaintzaview.pt:16
 msgid "alta-eman"
-msgstr "Onarpen eskaria (on-line)"
+msgstr "Onarpen eskaria egin (on-line)"
 
 #. Default: "Emaitza guztiak"
 #: ./browser/laneskaintzaview.pt:140
