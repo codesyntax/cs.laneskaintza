@@ -25,7 +25,7 @@ class laneskaintzaView(BrowserView):
 
     def request_form(self):
         #import pdb;pdb.set_trace()
-        expiration=False
+        expiration=True
         if self.context.getExpirationDate():
             if self.context.getExpirationDate() > DateTime():
                 expiration=True
