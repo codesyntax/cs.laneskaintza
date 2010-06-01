@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-02-25 14:55+0000\n"
-"PO-Revision-Date: 2010-02-25 15:57+0100\n"
+"POT-Creation-Date: 2010-06-01 07:47+0000\n"
+"PO-Revision-Date: 2010-06-01 10:19+0100\n"
 "Last-Translator: lur <libargutxi@codesyntax.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -18,39 +18,59 @@ msgstr ""
 msgid "Description of contact_information"
 msgstr "Contacto"
 
-#: ./content/laneskaintza.py:54
+#: ./content/laneskaintza.py:103
 msgid "Description of end_data"
 msgstr "Fecha de finalización"
 
-#: ./content/laneskaintza.py:70
+#: ./content/laneskaintza.py:127
 msgid "Description of file_enrolled"
 msgstr ""
 
-#: ./content/laneskaintza.py:95
+#: ./content/laneskaintza.py:118
+msgid "Description of file_enrolled_data"
+msgstr ""
+
+#: ./content/laneskaintza.py:183
 msgid "Description of file_exercise_results"
 msgstr ""
 
-#: ./content/laneskaintza.py:87
-msgid "Description of file_exercises"
+#: ./content/laneskaintza.py:175
+msgid "Description of file_exercise_results_data"
 msgstr ""
 
-#: ./content/laneskaintza.py:62
+#: ./content/laneskaintza.py:67
 msgid "Description of file_information"
 msgstr ""
 
-#: ./content/laneskaintza.py:79
+#: ./content/laneskaintza.py:89
+msgid "Description of file_prensa"
+msgstr ""
+
+#: ./content/laneskaintza.py:150
 msgid "Description of final_file_enrolled"
 msgstr ""
 
-#: ./content/laneskaintza.py:27
+#: ./content/laneskaintza.py:141
+msgid "Description of final_file_enrolled_data"
+msgstr ""
+
+#: ./content/laneskaintza.py:26
 msgid "Description of information"
 msgstr "Más información"
 
-#: ./content/laneskaintza.py:104
+#: ./content/laneskaintza.py:161
+msgid "Description of information_examenes"
+msgstr ""
+
+#: ./content/laneskaintza.py:36
 msgid "Description of modelo_instancia"
 msgstr ""
 
-#: ./content/laneskaintza.py:113
+#: ./content/laneskaintza.py:81
+msgid "Description of prensa_data"
+msgstr ""
+
+#: ./content/laneskaintza.py:193
 msgid "Description of situation"
 msgstr ""
 
@@ -58,9 +78,13 @@ msgstr ""
 msgid "Description of situation_source"
 msgstr "Estados"
 
-#: ./content/laneskaintza.py:41
+#: ./content/laneskaintza.py:59
 msgid "Description of start_data"
 msgstr "Fecha de inicio"
+
+#: ./content/laneskaintza.py:45
+msgid "Description of temario"
+msgstr ""
 
 #. Default: "Description of the Example Type"
 #: ./profiles/default/types/laneskaintzaFolder.xml
@@ -69,7 +93,7 @@ msgid "Description of the Example Type"
 msgstr ""
 
 #. Default: "Bukatutakoak"
-#: ./browser/pasted.pt:20
+#: ./browser/pasted.pt:17
 msgid "bukatutakoak"
 msgstr "Finalizados"
 
@@ -77,49 +101,85 @@ msgstr "Finalizados"
 msgid "contact_information"
 msgstr "Contacto"
 
-#: ./content/laneskaintza.py:53
+#: ./content/laneskaintza.py:102
 msgid "end_data"
-msgstr "Fecha de finalización"
+msgstr "Última fecha para la presentación de instancias"
 
-#: ./content/laneskaintza.py:69
+#: ./content/laneskaintza.py:126
 msgid "file_enrolled"
 msgstr "Lista de admitidos y excluídos provisional"
 
-#: ./content/laneskaintza.py:94
+#: ./content/laneskaintza.py:117
+msgid "file_enrolled_data"
+msgstr "Fecha publicación lista de admitidos y excluídos provisional"
+
+#: ./content/laneskaintza.py:182
 msgid "file_exercise_results"
 msgstr "Resultado de las pruebas"
 
-#: ./content/laneskaintza.py:86
-msgid "file_exercises"
-msgstr "Fechas y lugares de las pruebas"
+#: ./content/laneskaintza.py:174
+msgid "file_exercise_results_data"
+msgstr "Fecha publicación de los resultados de las pruebas"
 
-#: ./content/laneskaintza.py:61
+#: ./content/laneskaintza.py:66
 msgid "file_information"
 msgstr "Bases de la convocatoria"
 
-#: ./content/laneskaintza.py:78
+#: ./content/laneskaintza.py:88
+msgid "file_prensa"
+msgstr "PDF anuncio prensa"
+
+#: ./content/laneskaintza.py:149
 msgid "final_file_enrolled"
 msgstr "Lista definitiva de admitidos y excluídos"
 
-#: ./content/laneskaintza.py:26
+#: ./content/laneskaintza.py:140
+msgid "final_file_enrolled_data"
+msgstr "Fecha de publicación lista definitiva de admitidos y excluídos"
+
+#: ./content/laneskaintza.py:25
 msgid "information"
 msgstr "Más información"
 
-#: ./browser/laneskaintzaview.pt:34
+#: ./content/laneskaintza.py:160
+msgid "information_examenes"
+msgstr "Información de los examenes"
+
+#: ./browser/laneskaintzaview.pt:85
 msgid "label_laneskaintza_contact_information"
 msgstr "Contacto"
 
-#: ./browser/laneskaintzaview.pt:29
+#: ./browser/laneskaintzaview.pt:80
 msgid "label_laneskaintza_enddata"
 msgstr "Fecha de finalización"
+
+#: ./browser/laneskaintzaview.pt:90
+msgid "label_laneskaintza_file_enrolled_data"
+msgstr "Fecha publicación lista de admitidos y excluídos provisional"
+
+#: ./browser/laneskaintzaview.pt:132
+msgid "label_laneskaintza_file_exercise_results_data"
+msgstr "Fecha publicación de los resultados de las pruebas"
+
+#: ./browser/laneskaintzaview.pt:108
+msgid "label_laneskaintza_final_file_enrolled_data"
+msgstr "Fecha de publicación lista definitiva de admitidos y excluídos"
 
 #: ./browser/laneskaintzaview.pt:19
 msgid "label_laneskaintza_information"
 msgstr "Más información"
 
-#: ./browser/laneskaintzaview.pt:24
+#: ./browser/laneskaintzaview.pt:127
+msgid "label_laneskaintza_information_examenes"
+msgstr "Información de los examenes"
+
+#: ./browser/laneskaintzaview.pt:60
+msgid "label_laneskaintza_prensadata"
+msgstr "Fecha publicación en prensa"
+
+#: ./browser/laneskaintzaview.pt:40
 msgid "label_laneskaintza_startdata"
-msgstr "Fecha de inicio"
+msgstr "Fecha en el BOG"
 
 #. Default: "laneskaintza"
 #: ./profiles/default/types/laneskaintza.xml
@@ -131,16 +191,20 @@ msgstr "Oferta de empleo"
 msgid "laneskaintzaFolder"
 msgstr "Ofertas de empleo"
 
-#: ./content/laneskaintza.py:103
+#: ./content/laneskaintza.py:35
 msgid "modelo_instancia"
 msgstr "Modelo de instancia"
 
+#: ./content/laneskaintza.py:80
+msgid "prensa_data"
+msgstr "Fecha publicación en prensa"
+
 #. Default: "Prozesuan"
-#: ./browser/pasted.pt:19
+#: ./browser/prozesuan.pt:19
 msgid "prozesuan"
 msgstr "En proceso"
 
-#: ./content/laneskaintza.py:112
+#: ./content/laneskaintza.py:192
 msgid "situation"
 msgstr "Situación"
 
@@ -148,12 +212,16 @@ msgstr "Situación"
 msgid "situation_source"
 msgstr "Estados"
 
-#: ./content/laneskaintza.py:40
+#: ./content/laneskaintza.py:58
 msgid "start_data"
 msgstr "Fecha de inicio"
 
+#: ./content/laneskaintza.py:44
+msgid "temario"
+msgstr "Temario"
+
 #. Default: "Alta emateko zabalik daudenak"
-#: ./browser/pasted.pt:18
+#: ./browser/pasted.pt:15
 msgid "zabalik"
 msgstr "Abierto"
 

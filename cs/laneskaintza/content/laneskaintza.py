@@ -8,11 +8,10 @@ except ImportError:
     from Products.Archetypes import atapi
 from Products.ATContentTypes.content import folder
 from Products.ATContentTypes.content import schemata
-from Acquisition import aq_inner, aq_parent
 from cs.laneskaintza import laneskaintzaMessageFactory as _
 from cs.laneskaintza.interfaces import Ilaneskaintza
 from cs.laneskaintza.config import PROJECTNAME
-
+from Acquisition import aq_inner, aq_parent
 laneskaintzaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
 
     # -*- Your Archetypes field definitions here ... -*-
@@ -28,6 +27,25 @@ laneskaintzaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                                                 rows=10,
                                                 allow_file_upload=False),
                         ),
+
+   atapi.FileField('modelo_instancia',
+                  searchable=0,
+		  languageIndependent=1,
+                  widget=atapi.FileWidget(
+                     label=_(u"modelo_instancia"),
+                     description=_(u"Description of modelo_instancia"),
+                     ),
+                  ),
+
+   atapi.FileField('temario',
+                  searchable=0,
+		  languageIndependent=1,
+                  widget=atapi.FileWidget(
+                     label=_(u"temario"),
+                     description=_(u"Description of temario"),
+                     ),
+                  ),
+    
    atapi.DateTimeField(
         name='start_data',
         storage = atapi.AnnotationStorage(),
@@ -41,6 +59,37 @@ laneskaintzaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
             description=_(u"Description of start_data"),
         ),
     ),
+    atapi.FileField('file_information',
+                  searchable=0,
+		  languageIndependent=1,
+                  widget=atapi.FileWidget(
+                     label=_(u"file_information"),
+                     description=_(u"Description of file_information"),
+                     ),
+                  ),
+
+    atapi.DateTimeField(
+        name='prensa_data',
+        storage = atapi.AnnotationStorage(),
+        required=False,
+        languageIndependent=1,
+        #searchable=1,
+        #default='',
+        #schemata ='default',
+        widget=atapi.CalendarWidget(
+            label=_(u"prensa_data"),
+            description=_(u"Description of prensa_data"),
+        ),
+    ),
+    atapi.FileField('file_prensa',
+                  searchable=0,
+		  languageIndependent=1,
+                  widget=atapi.FileWidget(
+                     label=_(u"file_prensa"),
+                     description=_(u"Description of file_prensa"),
+                     ),
+                  ),
+    
    atapi.DateTimeField(
         name='end_data',
         storage = atapi.AnnotationStorage(),
@@ -54,14 +103,22 @@ laneskaintzaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
             description=_(u"Description of end_data"),
         ),
     ),
-   atapi.FileField('file_information',
-                  searchable=0,
-		  languageIndependent=1,
-                  widget=atapi.FileWidget(
-                     label=_(u"file_information"),
-                     description=_(u"Description of file_information"),
-                     ),
-                  ),
+
+
+   atapi.DateTimeField(
+        name='file_enrolled_data',
+        storage = atapi.AnnotationStorage(),
+        required=False,
+        languageIndependent=1,
+        #searchable=1,
+        #default='',
+        #schemata ='default',
+        widget=atapi.CalendarWidget(
+            label=_(u"file_enrolled_data"),
+            description=_(u"Description of file_enrolled_data"),
+        ),
+    ),
+  
    atapi.FileField('file_enrolled',
                   searchable=0,
 		  languageIndependent=1,
@@ -70,7 +127,21 @@ laneskaintzaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                      description=_(u"Description of file_enrolled"),
                      ),
                   ),
-
+    
+   atapi.DateTimeField(
+        name='final_file_enrolled_data',
+        storage = atapi.AnnotationStorage(),
+        required=False,
+        languageIndependent=1,
+        #searchable=1,
+        #default='',
+        #schemata ='default',
+        widget=atapi.CalendarWidget(
+            label=_(u"final_file_enrolled_data"),
+            description=_(u"Description of final_file_enrolled_data"),
+        ),
+    ),
+    
    atapi.FileField('final_file_enrolled',
                   searchable=0,
 		  languageIndependent=1,
@@ -79,14 +150,31 @@ laneskaintzaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                      description=_(u"Description of final_file_enrolled"),
                      ),
                   ),
-   atapi.FileField('file_exercises',
-                  searchable=0,
-		  languageIndependent=1,
-                  widget=atapi.FileWidget(
-                     label=_(u"file_exercises"),
-                     description=_(u"Description of file_exercises"),
-                     ),
-                  ),
+   
+   atapi.TextField('information_examenes',
+                        required=False,
+                        searchable=True,
+			storage=atapi.AnnotationStorage(),
+                        validators=('isTidyHtmlWithCleanup',),
+                        default_output_type='text/x-html-safe',
+                        widget=atapi.RichWidget(label=_(u'information_examenes'),
+                                                description=_(u'Description of information_examenes'),
+                                                rows=10,
+                                                allow_file_upload=False),
+                        ),
+   atapi.DateTimeField(
+        name='file_exercise_results_data',
+        storage = atapi.AnnotationStorage(),
+        required=False,
+        languageIndependent=1,
+        #searchable=1,
+        #default='',
+        #schemata ='default',
+        widget=atapi.CalendarWidget(
+            label=_(u"file_exercise_results_data"),
+            description=_(u"Description of file_exercise_results_data"),
+        ),
+    ),
    atapi.FileField('file_exercise_results',
                   searchable=0,
 		  languageIndependent=1,
@@ -96,14 +184,6 @@ laneskaintzaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                      ),
                   ),
 
-   atapi.FileField('modelo_instancia',
-                  searchable=0,
-		  languageIndependent=1,
-                  widget=atapi.FileWidget(
-                     label=_(u"modelo_instancia"),
-                     description=_(u"Description of modelo_instancia"),
-                     ),
-                  ),
    atapi.StringField('situation',
                   searchable=1,
 		  languageIndependent=0,
