@@ -24,7 +24,7 @@ laneskaintzaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                         default_output_type='text/x-html-safe',
                         widget=atapi.RichWidget(label=_(u'information'),
                                                 description=_(u'Description of information'),
-                                                rows=10,
+                                                rows=3,
                                                 allow_file_upload=False),
                         ),
 
@@ -159,7 +159,7 @@ laneskaintzaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                         default_output_type='text/x-html-safe',
                         widget=atapi.RichWidget(label=_(u'information_examenes'),
                                                 description=_(u'Description of information_examenes'),
-                                                rows=10,
+                                                rows=3,
                                                 allow_file_upload=False),
                         ),
    atapi.DateTimeField(
