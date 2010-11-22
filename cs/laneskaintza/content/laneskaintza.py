@@ -51,12 +51,26 @@ laneskaintzaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
         storage = atapi.AnnotationStorage(),
         required=False,
         languageIndependent=1,
-        #searchable=1,
+        searchable=1,
         #default='',
         #schemata ='default',
         widget=atapi.CalendarWidget(
             label=_(u"start_data"),
             description=_(u"Description of start_data"),
+        ),
+    ),
+
+    atapi.DateTimeField(
+        name='start_data_bog',
+        storage = atapi.AnnotationStorage(),
+        required=False,
+        languageIndependent=1,
+        searchable=1,
+        #default='',
+        #schemata ='default',
+        widget=atapi.CalendarWidget(
+            label=_(u"start_data_bog"),
+            description=_(u"Description of start_data_bog"),
         ),
     ),
     atapi.FileField('file_information',

@@ -41,6 +41,11 @@
 	<dd tal:define=" data python: here.toLocalizedTime(data)" tal:content="data"></dd>
 	</tal:block>
 
+        <tal:block tal:define="data python: here.getStart_data_bog()" tal:condition="data">
+	<dt i18n:translate="label_laneskaintza_startdata_bog"></dt>
+	<dd tal:define=" data python: here.toLocalizedTime(data)" tal:content="data"></dd>
+	</tal:block>
+
         <tal:files 
         define="field_macro field_macro | here/widgets/field/macros/base_view" 
         repeat="field python:[here.getField(f) for f in ['file_information']]"> 

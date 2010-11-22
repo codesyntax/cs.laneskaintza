@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-06-01 07:47+0000\n"
+"POT-Creation-Date: 2010-11-22 08:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,39 +18,39 @@ msgstr ""
 msgid "Description of contact_information"
 msgstr ""
 
-#: ./content/laneskaintza.py:103
+#: ./content/laneskaintza.py:117
 msgid "Description of end_data"
 msgstr ""
 
-#: ./content/laneskaintza.py:127
+#: ./content/laneskaintza.py:141
 msgid "Description of file_enrolled"
 msgstr ""
 
-#: ./content/laneskaintza.py:118
+#: ./content/laneskaintza.py:132
 msgid "Description of file_enrolled_data"
 msgstr ""
 
-#: ./content/laneskaintza.py:183
+#: ./content/laneskaintza.py:197
 msgid "Description of file_exercise_results"
 msgstr ""
 
-#: ./content/laneskaintza.py:175
+#: ./content/laneskaintza.py:189
 msgid "Description of file_exercise_results_data"
 msgstr ""
 
-#: ./content/laneskaintza.py:67
+#: ./content/laneskaintza.py:81
 msgid "Description of file_information"
 msgstr ""
 
-#: ./content/laneskaintza.py:89
+#: ./content/laneskaintza.py:103
 msgid "Description of file_prensa"
 msgstr ""
 
-#: ./content/laneskaintza.py:150
+#: ./content/laneskaintza.py:164
 msgid "Description of final_file_enrolled"
 msgstr ""
 
-#: ./content/laneskaintza.py:141
+#: ./content/laneskaintza.py:155
 msgid "Description of final_file_enrolled_data"
 msgstr ""
 
@@ -58,7 +58,7 @@ msgstr ""
 msgid "Description of information"
 msgstr ""
 
-#: ./content/laneskaintza.py:161
+#: ./content/laneskaintza.py:175
 msgid "Description of information_examenes"
 msgstr ""
 
@@ -66,11 +66,11 @@ msgstr ""
 msgid "Description of modelo_instancia"
 msgstr ""
 
-#: ./content/laneskaintza.py:81
+#: ./content/laneskaintza.py:95
 msgid "Description of prensa_data"
 msgstr ""
 
-#: ./content/laneskaintza.py:193
+#: ./content/laneskaintza.py:207
 msgid "Description of situation"
 msgstr ""
 
@@ -80,6 +80,10 @@ msgstr ""
 
 #: ./content/laneskaintza.py:59
 msgid "Description of start_data"
+msgstr ""
+
+#: ./content/laneskaintza.py:73
+msgid "Description of start_data_bog"
 msgstr ""
 
 #: ./content/laneskaintza.py:45
@@ -101,39 +105,39 @@ msgstr ""
 msgid "contact_information"
 msgstr ""
 
-#: ./content/laneskaintza.py:102
+#: ./content/laneskaintza.py:116
 msgid "end_data"
 msgstr ""
 
-#: ./content/laneskaintza.py:126
+#: ./content/laneskaintza.py:140
 msgid "file_enrolled"
 msgstr ""
 
-#: ./content/laneskaintza.py:117
+#: ./content/laneskaintza.py:131
 msgid "file_enrolled_data"
 msgstr ""
 
-#: ./content/laneskaintza.py:182
+#: ./content/laneskaintza.py:196
 msgid "file_exercise_results"
 msgstr ""
 
-#: ./content/laneskaintza.py:174
+#: ./content/laneskaintza.py:188
 msgid "file_exercise_results_data"
 msgstr ""
 
-#: ./content/laneskaintza.py:66
+#: ./content/laneskaintza.py:80
 msgid "file_information"
 msgstr ""
 
-#: ./content/laneskaintza.py:88
+#: ./content/laneskaintza.py:102
 msgid "file_prensa"
 msgstr ""
 
-#: ./content/laneskaintza.py:149
+#: ./content/laneskaintza.py:163
 msgid "final_file_enrolled"
 msgstr ""
 
-#: ./content/laneskaintza.py:140
+#: ./content/laneskaintza.py:154
 msgid "final_file_enrolled_data"
 msgstr ""
 
@@ -141,27 +145,27 @@ msgstr ""
 msgid "information"
 msgstr ""
 
-#: ./content/laneskaintza.py:160
+#: ./content/laneskaintza.py:174
 msgid "information_examenes"
 msgstr ""
 
-#: ./browser/laneskaintzaview.pt:85
+#: ./browser/laneskaintzaview.pt:90
 msgid "label_laneskaintza_contact_information"
 msgstr ""
 
-#: ./browser/laneskaintzaview.pt:80
+#: ./browser/laneskaintzaview.pt:85
 msgid "label_laneskaintza_enddata"
 msgstr ""
 
-#: ./browser/laneskaintzaview.pt:90
+#: ./browser/laneskaintzaview.pt:95
 msgid "label_laneskaintza_file_enrolled_data"
 msgstr ""
 
-#: ./browser/laneskaintzaview.pt:132
+#: ./browser/laneskaintzaview.pt:137
 msgid "label_laneskaintza_file_exercise_results_data"
 msgstr ""
 
-#: ./browser/laneskaintzaview.pt:108
+#: ./browser/laneskaintzaview.pt:113
 msgid "label_laneskaintza_final_file_enrolled_data"
 msgstr ""
 
@@ -169,16 +173,20 @@ msgstr ""
 msgid "label_laneskaintza_information"
 msgstr ""
 
-#: ./browser/laneskaintzaview.pt:127
+#: ./browser/laneskaintzaview.pt:132
 msgid "label_laneskaintza_information_examenes"
 msgstr ""
 
-#: ./browser/laneskaintzaview.pt:60
+#: ./browser/laneskaintzaview.pt:65
 msgid "label_laneskaintza_prensadata"
 msgstr ""
 
 #: ./browser/laneskaintzaview.pt:40
 msgid "label_laneskaintza_startdata"
+msgstr ""
+
+#: ./browser/laneskaintzaview.pt:45
+msgid "label_laneskaintza_startdata_bog"
 msgstr ""
 
 #. Default: "laneskaintza"
@@ -195,7 +203,7 @@ msgstr ""
 msgid "modelo_instancia"
 msgstr ""
 
-#: ./content/laneskaintza.py:80
+#: ./content/laneskaintza.py:94
 msgid "prensa_data"
 msgstr ""
 
@@ -204,7 +212,7 @@ msgstr ""
 msgid "prozesuan"
 msgstr ""
 
-#: ./content/laneskaintza.py:192
+#: ./content/laneskaintza.py:206
 msgid "situation"
 msgstr ""
 
@@ -214,6 +222,10 @@ msgstr ""
 
 #: ./content/laneskaintza.py:58
 msgid "start_data"
+msgstr ""
+
+#: ./content/laneskaintza.py:72
+msgid "start_data_bog"
 msgstr ""
 
 #: ./content/laneskaintza.py:44
