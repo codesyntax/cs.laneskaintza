@@ -17,10 +17,9 @@
   </metal:label_macro>
 
   <metal:label_macro metal:define-macro="titlelabel">
-    <label tal:content="here/Title">
-    </label><br/>
+    <!--<label tal:content="here/Title">
+    </label><br/>-->
   </metal:label_macro>
-
 
   <metal:data_macro metal:define-macro="data">
     <dd>

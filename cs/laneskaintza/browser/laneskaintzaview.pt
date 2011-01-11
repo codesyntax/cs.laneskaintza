@@ -54,7 +54,7 @@
                               visState python:field.widget.isVisible(here, mode); 
                               visCondition python:field.widget.testCondition(here, portal, template) and field.get_size(here); 
                               label_macro here/laneskaintza_general/macros/label; 
-                              data_macro here/laneskaintza_general/macros/data;" 
+                              data_macro here/laneskaintza_general/macros/data" 
                       condition="python:visState == 'visible' and visCondition"> 
         <metal:use_field use-macro="field_macro" /> 
       </tal:if_visible> 
@@ -71,9 +71,13 @@
         <tal:if_visible define="mode string:view;
                                   visState python:field.widget.isVisible(here, mode);
                                   visCondition python:field.widget.testCondition(here, portal, template) and field.get_size(here);
-                                  label_macro here/laneskaintza_general/macros/titlelabel; "
+                                  label_macro here/laneskaintza_general/titlelabel"
                         condition="python:visState == 'visible' and visCondition">
+          <div class="field ArchetypesField-FileField">
+          <label tal:content="here/Title"></label>
+          <p tal:content="here/Description"></p>
           <metal:use_field use-macro="field_macro" />
+          </div>
         </tal:if_visible>
         </tal:block>
       </tal:otherfiles>
