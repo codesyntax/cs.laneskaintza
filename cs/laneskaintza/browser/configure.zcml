@@ -54,7 +54,7 @@
       />
     <subscriber
         for="..interfaces.laneskaintza.Ilaneskaintza
-             Products.Archetypes.interfaces._event.IObjectInitializedEvent"
+             Products.Archetypes.interfaces.IObjectInitializedEvent"
         handler=".subscribers.laneskaintza_created" />
 
     <!--<subscriber

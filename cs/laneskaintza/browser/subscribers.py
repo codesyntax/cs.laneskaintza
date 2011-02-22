@@ -1,8 +1,5 @@
 from Acquisition import aq_inner, aq_parent
-from Products.CMFCore.utils import getToolByName
-from zope.app.annotation.interfaces import IAnnotations, IAttributeAnnotatable
-from BTrees.OOBTree import OOBTree
-from urllib import urlopen
+
 def laneskaintza_created(object, event):
     
     
