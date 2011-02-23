@@ -76,7 +76,10 @@
           <div class="field ArchetypesField-FileField">
           <label tal:content="here/Title"></label>
           <p tal:content="here/Description"></p>
-          <metal:use_field use-macro="field_macro" />
+          <metal:field use-macro="python:here.widget('file', mode='view')">
+                File
+                </metal:field>
+          <!--<metal:use_field use-macro="field_macro" />-->
           </div>
         </tal:if_visible>
         </tal:block>
