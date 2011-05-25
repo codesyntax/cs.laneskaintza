@@ -35,18 +35,7 @@
         <metal:use_field use-macro="field_macro" /> 
       </tal:if_visible> 
     </tal:files> 
- 
-	<tal:block tal:define="data python: here.getStart_data()" tal:condition="data">
-	<dt i18n:translate="label_laneskaintza_startdata"></dt>
-	<dd tal:define=" data python: here.toLocalizedTime(data)" tal:content="data"></dd>
-	</tal:block>
-
-        <tal:block tal:define="data python: here.getStart_data_bog()" tal:condition="data">
-	<dt i18n:translate="label_laneskaintza_startdata_bog"></dt>
-	<dd tal:define=" data python: here.toLocalizedTime(data)" tal:content="data"></dd>
-	</tal:block>
-
-        <tal:files 
+    <tal:files 
         define="field_macro field_macro | here/widgets/field/macros/base_view" 
         repeat="field python:[here.getField(f) for f in ['file_information']]"> 
 	 	         
@@ -61,8 +50,23 @@
       </tal:if_visible> 
     </tal:files>
 
+	<tal:block tal:define="data python: here.getStart_data()" tal:condition="data">
+	<dt i18n:translate="label_laneskaintza_startdata"></dt>
+	<dd tal:define=" data python: here.toLocalizedTime(data)" tal:content="data"></dd>
+	</tal:block>
+
+        <tal:block tal:define="data python: here.getEnd_data()" tal:condition="data">
+	<dt i18n:translate="label_laneskaintza_enddata"></dt>
+	<dd tal:define=" data python: here.toLocalizedTime(data)" tal:content="data"></dd>
+	</tal:block>
+
        <tal:block tal:define="data python: here.getPrensa_data()" tal:condition="data">
 	<dt i18n:translate="label_laneskaintza_prensadata"></dt>
+	<dd tal:define=" data python: here.toLocalizedTime(data)" tal:content="data"></dd>
+	</tal:block>
+
+        <tal:block tal:define="data python: here.getStart_data_bog()" tal:condition="data">
+	<dt i18n:translate="label_laneskaintza_startdata_bog"></dt>
 	<dd tal:define=" data python: here.toLocalizedTime(data)" tal:content="data"></dd>
 	</tal:block>
 
@@ -80,11 +84,6 @@
         <metal:use_field use-macro="field_macro" /> 
       </tal:if_visible> 
     </tal:files> 
-
-	<tal:block tal:define="data python: here.getEnd_data()" tal:condition="data">
-	<dt i18n:translate="label_laneskaintza_enddata"></dt>
-	<dd tal:define=" data python: here.toLocalizedTime(data)" tal:content="data"></dd>
-	</tal:block>
 
 	<tal:block tal:define="contact_information python: here.aq_parent.getContact_information()" tal:condition="contact_information">
 	<dt i18n:translate="label_laneskaintza_contact_information"></dt>
