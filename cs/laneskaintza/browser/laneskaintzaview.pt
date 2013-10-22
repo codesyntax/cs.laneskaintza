@@ -5,7 +5,7 @@
 <body>
     <div metal:fill-slot="main">
         <tal:main-macro metal:define-macro="main">
- 	<h1 class="documentFirstHeading"> 
+ 	<h1 class="documentFirstHeading">
             <metal:field use-macro="python:here.widget('title', mode='view')">
             Title
             </metal:field>
@@ -25,7 +25,7 @@
 	<dt i18n:translate="label_laneskaintza_information"></dt>
 	<dd tal:define="information python:here.getInformation()" tal:content="structure information"></dd>
 	</tal:block>
-	
+
 	<tal:block tal:define="data python: here.getStart_data()" tal:condition="data">
 	<dt i18n:translate="label_laneskaintza_startdata"></dt>
 	<dd tal:define=" data python: here.toLocalizedTime(data)" tal:content="data"></dd>
@@ -43,43 +43,44 @@
 
 
   </dl>
-  
-   
-   <tal:files 
-        define="field_macro field_macro | here/widgets/field/macros/base_view" 
-        repeat="field python:[here.getField(f) for f in ['file_information', 'main_bases', 'instance', 'file_enrolled', 'final_file_enrolled', 'file_exercises', 'file_exercise_results']]"> 
-	 	         
-      <tal:if_visible define="mode string:view; 
+
+
+   <tal:files
+        define="field_macro field_macro | here/widgets/field/macros/base_view"
+        repeat="field python:[here.getField(f) for f in ['file_information', 'main_bases', 'instance', 'file_enrolled', 'final_file_enrolled', 'file_exercises', 'file_exercise_results']]">
+
+      <tal:if_visible define="mode string:view;
                               accessor nocall:field/accessor;
-                              visState python:field.widget.isVisible(here, mode); 
-                              visCondition python:field.get_size(here); 
-                              label_macro here/laneskaintza_general/macros/label; 
-                              data_macro here/laneskaintza_general/macros/data" 
-                      condition="python:visState == 'visible' and visCondition"> 
-        <metal:use_field use-macro="field_macro" /> 
-      </tal:if_visible> 
-    </tal:files> 
+                              visState python:field.widget.isVisible(here, mode);
+                              visCondition python:field.get_size(here);
+                              label_macro here/laneskaintza_general/macros/label;
+                              data_macro here/laneskaintza_general/macros/data"
+                      condition="python:visState == 'visible' and visCondition">
+        <metal:use_field use-macro="field_macro" />
+      </tal:if_visible>
+    </tal:files>
 
    <tal:otherfiles define="contentFilter python:{'portal_type':'File'}"
-                    repeat="obj python:here.getFolderContents(contentFilter, full_objects=1)">
-      
-      <tal:block
-          define="here nocall:obj;
-                  field_macro field_macro | here/widgets/field/macros/view"
-          repeat="field python:[here.getField(f) for f in ['file']]">
-        
+                    repeat="context python:here.getFolderContents(contentFilter, full_objects=1)">
+
+
+     <tal:block
+          define="
+                  field_macro field_macro | context/widgets/field/macros/view"
+          repeat="field python:[context.getField(f) for f in ['file']]">
+
         <tal:if_visible define="mode string:view;
-                                  visState python:field.widget.isVisible(here, mode);
-                                  visCondition python:field.get_size(here);
+                                  visState python:field.widget.isVisible(context, mode);
+                                  visCondition python:field.get_size(context);
                                   label_macro here/laneskaintza_general/titlelabel"
                         condition="python:visState == 'visible' and visCondition">
           <div class="field ArchetypesField-FileField">
-          <label tal:content="here/Title"></label>
-          <p tal:content="here/Description"></p>
-          <metal:field use-macro="python:here.widget('file', mode='view')">
+          <label tal:content="context/Title"></label>
+          <p tal:content="context/Description"></p>
+          <metal:field use-macro="python:context.widget('file', mode='view')">
                 File
                 </metal:field>
-          <!--<metal:use_field use-macro="field_macro" />-->
+
           </div>
         </tal:if_visible>
         </tal:block>
@@ -90,7 +91,7 @@
           define="here nocall:obj;
                   field_macro field_macro | here/widgets/field/macros/view"
           repeat="field python:[here.getField(f) for f in ['file']]">
-        
+
         <tal:if_visible define="mode string:view;
                                 visState python:field.widget.isVisible(here, mode);
                                 visCondition python:field.get_size(here);"
@@ -98,7 +99,7 @@
                                    visCondition and not isAnon">
           <metal:use_field use-macro="field_macro" />
         </tal:if_visible>
-        
+
         <tal:search condition="not:python:obj.getKeyField() or isAnon">
           <a href="#" tal:attributes="href
                                       string:${obj/absolute_url}/set.html"
@@ -109,24 +110,24 @@
 
 
         <tal:search condition="obj/getKeyField">
-        
+
           <form action="." method="get">
-            <label 
+            <label
                 for="id_number"
                 i18n:translate="label_identification_number">Code number: 15398248R</label>
             <input type="text" id="id_number" name="id_number"/>
             <input type="submit" i18n:attributes="value label_search_id"
                    value="Search"/>
           </form>
-          
+
           <tal:block
               tal:condition="request/id_number|nothing">
 
             <h3 i18n:translate="heading_search_results">Search results</h3>
 	    <tal:define tal:condition="results"
-                 tal:define="id_number python: request.get('id_number', ''); 
+                 tal:define="id_number python: request.get('id_number', '');
                              item nocall:obj;
-                             headers python:item.getFieldHeaders(); 
+                             headers python:item.getFieldHeaders();
                              results python:item.search(id_number);">
             <table class="listing">
               <tr>
@@ -135,7 +136,7 @@
                   Header
                 </th>
               </tr>
-              
+
               <tr tal:repeat="result results">
                 <td tal:repeat="header headers"
                     tal:content="python:result.get(header, '')">
@@ -149,10 +150,10 @@
         </tal:search>
       </tal:block>
     </tal:csvfinder>
-            
+
     </div>
         </tal:main-macro>
-     
+
     </div>
 </body>
 </html>
