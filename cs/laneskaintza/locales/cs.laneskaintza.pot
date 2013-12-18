@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-11-22 08:20+0000\n"
+"POT-Creation-Date: 2013-12-17 11:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -90,14 +90,15 @@ msgstr ""
 msgid "Description of temario"
 msgstr ""
 
-#. Default: "Description of the Example Type"
-#: ./profiles/default/types/laneskaintzaFolder.xml
 #: ./profiles/default/types/laneskaintza.xml
+#: ./profiles/default/types/laneskaintzaFolder.xml
 msgid "Description of the Example Type"
 msgstr ""
 
 #. Default: "Bukatutakoak"
-#: ./browser/pasted.pt:17
+#: ./browser/laneskaintzafolderview.pt:16
+#: ./browser/pasted.pt:16
+#: ./browser/prozesuan.pt:20
 msgid "bukatutakoak"
 msgstr ""
 
@@ -141,6 +142,11 @@ msgstr ""
 msgid "final_file_enrolled_data"
 msgstr ""
 
+#. Default: "Geldituta"
+#: ./browser/laneskaintzafolderview.pt:17
+msgid "geldituta"
+msgstr ""
+
 #: ./content/laneskaintza.py:25
 msgid "information"
 msgstr ""
@@ -149,23 +155,23 @@ msgstr ""
 msgid "information_examenes"
 msgstr ""
 
-#: ./browser/laneskaintzaview.pt:90
+#: ./browser/laneskaintzaview.pt:89
 msgid "label_laneskaintza_contact_information"
 msgstr ""
 
-#: ./browser/laneskaintzaview.pt:85
+#: ./browser/laneskaintzaview.pt:59
 msgid "label_laneskaintza_enddata"
 msgstr ""
 
-#: ./browser/laneskaintzaview.pt:95
+#: ./browser/laneskaintzaview.pt:94
 msgid "label_laneskaintza_file_enrolled_data"
 msgstr ""
 
-#: ./browser/laneskaintzaview.pt:137
+#: ./browser/laneskaintzaview.pt:136
 msgid "label_laneskaintza_file_exercise_results_data"
 msgstr ""
 
-#: ./browser/laneskaintzaview.pt:113
+#: ./browser/laneskaintzaview.pt:112
 msgid "label_laneskaintza_final_file_enrolled_data"
 msgstr ""
 
@@ -173,28 +179,26 @@ msgstr ""
 msgid "label_laneskaintza_information"
 msgstr ""
 
-#: ./browser/laneskaintzaview.pt:132
+#: ./browser/laneskaintzaview.pt:131
 msgid "label_laneskaintza_information_examenes"
 msgstr ""
 
-#: ./browser/laneskaintzaview.pt:65
+#: ./browser/laneskaintzaview.pt:64
 msgid "label_laneskaintza_prensadata"
 msgstr ""
 
-#: ./browser/laneskaintzaview.pt:40
+#: ./browser/laneskaintzaview.pt:54
 msgid "label_laneskaintza_startdata"
 msgstr ""
 
-#: ./browser/laneskaintzaview.pt:45
+#: ./browser/laneskaintzaview.pt:69
 msgid "label_laneskaintza_startdata_bog"
 msgstr ""
 
-#. Default: "laneskaintza"
 #: ./profiles/default/types/laneskaintza.xml
 msgid "laneskaintza"
 msgstr ""
 
-#. Default: "laneskaintzaFolder"
 #: ./profiles/default/types/laneskaintzaFolder.xml
 msgid "laneskaintzaFolder"
 msgstr ""
@@ -233,7 +237,9 @@ msgid "temario"
 msgstr ""
 
 #. Default: "Alta emateko zabalik daudenak"
+#: ./browser/laneskaintzafolderview.pt:15
 #: ./browser/pasted.pt:15
+#: ./browser/prozesuan.pt:18
 msgid "zabalik"
 msgstr ""
 
