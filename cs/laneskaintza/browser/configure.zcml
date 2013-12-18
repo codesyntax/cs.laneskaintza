@@ -54,6 +54,13 @@
       template="pasted.pt"
       permission="zope.Public"
     />
+
+    <browser:page
+      for="..interfaces.laneskaintzafolder.IlaneskaintzaFolder"
+      name="stopped"
+      template="stoped.pt"
+      permission="zope.Public"
+    />
     <browser:page
       for="..interfaces.laneskaintzafolder.IlaneskaintzaFolder"
       name="prozesuan"
