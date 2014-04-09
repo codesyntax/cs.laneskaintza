@@ -8,7 +8,7 @@ from setuptools import setup, find_packages
 def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
 
-version = '1.15debabarrena'
+version = '1.39debabarrena'
 
 long_description = (
     read('README.txt')
@@ -61,7 +61,7 @@ setup(name='cs.laneskaintza',
       extras_require=dict(tests=tests_require),
       test_suite = 'cs.laneskaintza.tests.test_docs.test_suite',
       entry_points="""
-      # -*- entry_points -*- 
+      # -*- entry_points -*-
       [distutils.setup_keywords]
       paster_plugins = setuptools.dist:assert_string_list
 

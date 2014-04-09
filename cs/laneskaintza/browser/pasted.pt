@@ -1,38 +1,44 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
       lang="en"
       metal:use-macro="here/main_template/macros/master"
-      i18n:domain="plone">
+      i18n:domain="cs.laneskaintza">
 
 <body>
 
-    <div id="content" metal:fill-slot="main">
+    <div metal:fill-slot="main">
     <metal:main-macro define-macro="main">
 
-	<h1 class="documentFirstHeading"> 
+  <h1 class="documentFirstHeading">
           <tal:content content="here/Title"></tal:content>
-	</h1>
-	<ul id="tabs">
-	<li><a tal:attributes="href string:${here/absolute_url}" i18n:domain="cs.laneskaintza" i18n:translate="zabalik">Alta emateko zabalik daudenak</a></li>
+  </h1>
+  <ul id="tabs">
+  <li><a tal:attributes="href string:${here/absolute_url}" i18n:domain="cs.laneskaintza" i18n:translate="zabalik">Alta emateko zabalik daudenak</a></li>
         <li class="on"><a tal:attributes="href string:${here/absolute_url}/past" i18n:domain="cs.laneskaintza" i18n:translate="bukatutakoak">Bukatutakoak</a></li>
-	<li><a tal:attributes="href string:${here/absolute_url}/stopped" i18n:domain="cs.laneskaintza" i18n:translate="geldituta">Geldituta</a></li>
-	</ul>
+  <li><a tal:attributes="href string:${here/absolute_url}/stopped" i18n:domain="cs.laneskaintza" i18n:translate="geldituta">Geldituta</a></li>
+  </ul>
        <metal:listingmacro define-macro="listing">
         <tal:foldercontents define="bista here/laneskaintza_lista;edukia python: bista.laneskaintza_lista(1); batch edukia">
          <div id="laneskaintzak">
          <tal:listing repeat="laneskaintza batch">
-	
-	<div class="laneskaintza">
-	<h2 class="tileHeadline"><a tal:attributes="href laneskaintza/getURL" tal:content="laneskaintza/Title"></a></h2>
+
+  <div class="laneskaintza">
+  <h2 class="tileHeadline"><a tal:attributes="href laneskaintza/getURL" tal:content="laneskaintza/Title"></a></h2>
          </div>
-        
+
         </tal:listing>
-	</div>
-        <div metal:use-macro="here/batch_macros/macros/navigation" />
-         
-        </tal:foldercontents>
-        
-        
+  </div>
+
+
+        <tal:base define="batch_base_url string:pasted">
+          <div metal:use-macro="here/batch_macros/macros/navigation" />
+        </tal:base>
+
+
         </metal:listingmacro>
+        </tal:foldercontents>
+
+
+
     </metal:main-macro>
     </div>
 

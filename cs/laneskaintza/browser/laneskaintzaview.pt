@@ -5,13 +5,13 @@
 <body>
     <div metal:fill-slot="main">
         <tal:main-macro metal:define-macro="main">
- 	<h1 class="documentFirstHeading"> 
+ 	<h1 class="documentFirstHeading">
             <metal:field use-macro="python:here.widget('title', mode='view')">
             Title
             </metal:field>
   	</h1>
   <div class="laneskaintzaview">
-  
+
 
   <dl>
 
@@ -19,35 +19,34 @@
 	<dt i18n:translate="label_laneskaintza_information"></dt>
 	<dd tal:define="information python:here.getInformation()" tal:content="structure information"></dd>
 	</tal:block>
-  
 
-  <tal:files 
-        define="field_macro field_macro | here/widgets/field/macros/base_view" 
-        repeat="field python:[here.getField(f) for f in ['temario', 'modelo_instancia']]"> 
-	 	         
-      <tal:if_visible define="mode string:view; 
+  <tal:files
+        define="field_macro field_macro | here/widgets/field/macros/base_view"
+        repeat="field python:[here.getField(f) for f in ['temario', 'modelo_instancia']]">
+
+      <tal:if_visible define="mode string:view;
                               accessor nocall:field/accessor;
-                              visState python:field.widget.isVisible(here, mode); 
-                              visCondition python:field.widget.testCondition(here, portal, template) and field.get_size(here); 
-                              label_macro here/laneskaintza_general/macros/label; 
-                              data_macro here/laneskaintza_general/macros/data;" 
-                      condition="python:visState == 'visible' and visCondition"> 
-        <metal:use_field use-macro="field_macro" /> 
-      </tal:if_visible> 
-    </tal:files> 
-    <tal:files 
-        define="field_macro field_macro | here/widgets/field/macros/base_view" 
-        repeat="field python:[here.getField(f) for f in ['file_information']]"> 
-	 	         
-      <tal:if_visible define="mode string:view; 
+                              visState python:field.widget.isVisible(here, mode);
+                              visCondition python:field.widget.testCondition(here, portal, template) and field.get_size(here);
+                              label_macro here/laneskaintza_general/macros/label;
+                              data_macro here/laneskaintza_general/macros/data;"
+                      condition="python:visState == 'visible' and visCondition">
+        <metal:use_field use-macro="field_macro" />
+      </tal:if_visible>
+    </tal:files>
+    <tal:files
+        define="field_macro field_macro | here/widgets/field/macros/base_view"
+        repeat="field python:[here.getField(f) for f in ['file_information']]">
+
+      <tal:if_visible define="mode string:view;
                               accessor nocall:field/accessor;
-                              visState python:field.widget.isVisible(here, mode); 
-                              visCondition python:field.widget.testCondition(here, portal, template) and field.get_size(here); 
-                              label_macro here/laneskaintza_general/macros/label; 
-                              data_macro here/laneskaintza_general/macros/data;" 
-                      condition="python:visState == 'visible' and visCondition"> 
-        <metal:use_field use-macro="field_macro" /> 
-      </tal:if_visible> 
+                              visState python:field.widget.isVisible(here, mode);
+                              visCondition python:field.widget.testCondition(here, portal, template) and field.get_size(here);
+                              label_macro here/laneskaintza_general/macros/label;
+                              data_macro here/laneskaintza_general/macros/data;"
+                      condition="python:visState == 'visible' and visCondition">
+        <metal:use_field use-macro="field_macro" />
+      </tal:if_visible>
     </tal:files>
 
 	<tal:block tal:define="data python: here.getStart_data()" tal:condition="data">
@@ -70,20 +69,20 @@
 	<dd tal:define=" data python: here.toLocalizedTime(data)" tal:content="data"></dd>
 	</tal:block>
 
-        <tal:files 
-        define="field_macro field_macro | here/widgets/field/macros/base_view" 
-        repeat="field python:[here.getField(f) for f in ['file_prensa']]"> 
-	 	         
-      <tal:if_visible define="mode string:view; 
+        <tal:files
+        define="field_macro field_macro | here/widgets/field/macros/base_view"
+        repeat="field python:[here.getField(f) for f in ['file_prensa']]">
+
+      <tal:if_visible define="mode string:view;
                               accessor nocall:field/accessor;
-                              visState python:field.widget.isVisible(here, mode); 
-                              visCondition python:field.widget.testCondition(here, portal, template) and field.get_size(here); 
-                              label_macro here/laneskaintza_general/macros/label; 
-                              data_macro here/laneskaintza_general/macros/data;" 
-                      condition="python:visState == 'visible' and visCondition"> 
-        <metal:use_field use-macro="field_macro" /> 
-      </tal:if_visible> 
-    </tal:files> 
+                              visState python:field.widget.isVisible(here, mode);
+                              visCondition python:field.widget.testCondition(here, portal, template) and field.get_size(here);
+                              label_macro here/laneskaintza_general/macros/label;
+                              data_macro here/laneskaintza_general/macros/data;"
+                      condition="python:visState == 'visible' and visCondition">
+        <metal:use_field use-macro="field_macro" />
+      </tal:if_visible>
+    </tal:files>
 
 	<tal:block tal:define="contact_information python: here.aq_parent.getContact_information()" tal:condition="contact_information">
 	<dt i18n:translate="label_laneskaintza_contact_information"></dt>
@@ -94,38 +93,38 @@
 	<dt i18n:translate="label_laneskaintza_file_enrolled_data"></dt>
 	<dd tal:define=" data python: here.toLocalizedTime(data)" tal:content="data"></dd>
   </tal:block>
-   <tal:files 
-        define="field_macro field_macro | here/widgets/field/macros/base_view" 
-        repeat="field python:[here.getField(f) for f in ['file_enrolled']]"> 
-	 	         
-      <tal:if_visible define="mode string:view; 
+   <tal:files
+        define="field_macro field_macro | here/widgets/field/macros/base_view"
+        repeat="field python:[here.getField(f) for f in ['file_enrolled']]">
+
+      <tal:if_visible define="mode string:view;
                               accessor nocall:field/accessor;
-                              visState python:field.widget.isVisible(here, mode); 
-                              visCondition python:field.widget.testCondition(here, portal, template) and field.get_size(here); 
-                              label_macro here/laneskaintza_general/macros/label; 
-                              data_macro here/laneskaintza_general/macros/data;" 
-                      condition="python:visState == 'visible' and visCondition"> 
-        <metal:use_field use-macro="field_macro" /> 
-      </tal:if_visible> 
-    </tal:files> 
+                              visState python:field.widget.isVisible(here, mode);
+                              visCondition python:field.widget.testCondition(here, portal, template) and field.get_size(here);
+                              label_macro here/laneskaintza_general/macros/label;
+                              data_macro here/laneskaintza_general/macros/data;"
+                      condition="python:visState == 'visible' and visCondition">
+        <metal:use_field use-macro="field_macro" />
+      </tal:if_visible>
+    </tal:files>
    <tal:block tal:define="data python: here.getFinal_file_enrolled_data()" tal:condition="data">
 	<dt i18n:translate="label_laneskaintza_final_file_enrolled_data"></dt>
 	<dd tal:define=" data python: here.toLocalizedTime(data)" tal:content="data"></dd>
   </tal:block>
-   <tal:files 
-        define="field_macro field_macro | here/widgets/field/macros/base_view" 
-        repeat="field python:[here.getField(f) for f in ['final_file_enrolled']]"> 
-	 	         
-      <tal:if_visible define="mode string:view; 
+   <tal:files
+        define="field_macro field_macro | here/widgets/field/macros/base_view"
+        repeat="field python:[here.getField(f) for f in ['final_file_enrolled']]">
+
+      <tal:if_visible define="mode string:view;
                               accessor nocall:field/accessor;
-                              visState python:field.widget.isVisible(here, mode); 
-                              visCondition python:field.widget.testCondition(here, portal, template) and field.get_size(here); 
-                              label_macro here/laneskaintza_general/macros/label; 
-                              data_macro here/laneskaintza_general/macros/data;" 
-                      condition="python:visState == 'visible' and visCondition"> 
-        <metal:use_field use-macro="field_macro" /> 
-      </tal:if_visible> 
-    </tal:files> 
+                              visState python:field.widget.isVisible(here, mode);
+                              visCondition python:field.widget.testCondition(here, portal, template) and field.get_size(here);
+                              label_macro here/laneskaintza_general/macros/label;
+                              data_macro here/laneskaintza_general/macros/data;"
+                      condition="python:visState == 'visible' and visCondition">
+        <metal:use_field use-macro="field_macro" />
+      </tal:if_visible>
+    </tal:files>
 
     <tal:block tal:define="information python: here.getInformation_examenes()" tal:condition="information">
 	<dt i18n:translate="label_laneskaintza_information_examenes"></dt>
@@ -137,43 +136,26 @@
 	<dd tal:define=" data python: here.toLocalizedTime(data)" tal:content="data"></dd>
   </tal:block>
 
-   <tal:files 
-        define="field_macro field_macro | here/widgets/field/macros/base_view" 
-        repeat="field python:[here.getField(f) for f in ['file_exercise_results']]"> 
-	 	         
-      <tal:if_visible define="mode string:view; 
-                              accessor nocall:field/accessor;
-                              visState python:field.widget.isVisible(here, mode); 
-                              visCondition python:field.widget.testCondition(here, portal, template) and field.get_size(here); 
-                              label_macro here/laneskaintza_general/macros/label; 
-                              data_macro here/laneskaintza_general/macros/data;" 
-                      condition="python:visState == 'visible' and visCondition"> 
-        <metal:use_field use-macro="field_macro" /> 
-      </tal:if_visible> 
-    </tal:files> 
+   <tal:files
+        define="field_macro field_macro | here/widgets/field/macros/base_view"
+        repeat="field python:[here.getField(f) for f in ['file_exercise_results']]">
 
-   <!--<tal:otherfiles define="contentFilter python:{'portal_type':'File'}"
-                    repeat="obj python:here.getFolderContents(contentFilter, full_objects=1)">
-      
-      <tal:block
-          define="here nocall:obj;
-                  field_macro field_macro | here/widgets/field/macros/view"
-          repeat="field python:[here.getField(f) for f in ['file']]">
-        
-        <tal:if_visible define="mode string:view;
-                                  visState python:field.widget.isVisible(here, mode);
-                                  visCondition python:field.widget.testCondition(here, portal, template) and field.get_size(here);
-                                  label_macro here/aq_parent/laneskaintza_general/macros/titlelabel; "
-                                   
-                        condition="python:visState == 'visible' and visCondition">
-          <metal:use_field use-macro="field_macro" />
-        </tal:if_visible>
-        </tal:block>
-      </tal:otherfiles>-->
-    </dl>      
+      <tal:if_visible define="mode string:view;
+
+                              accessor nocall:field/accessor;
+                              visState python:field.widget.isVisible(here, mode);
+                              visCondition python:field.get_size(here);
+                              label_macro here/laneskaintza_general/macros/label;
+                              data_macro here/laneskaintza_general/macros/data"
+                      condition="python:visState == 'visible' and visCondition">
+        <metal:use_field use-macro="field_macro" />
+      </tal:if_visible>
+    </tal:files>
+    </dl>
+
     </div>
         </tal:main-macro>
-     
+
     </div>
 </body>
 </html>

@@ -43,11 +43,25 @@
       allowed_attributes="laneskaintza_lista"
 	
       />
+
+    <browser:page
+      name="laneskaintza_kopurua"
+      for="*"
+      class=".laneskaintza_kopurua.Kopurua"
+      permission="zope2.View"
+      allowed_attributes="laneskaintza_kopurua"
+	
+      />
     <subscriber
         for="..interfaces.laneskaintza.Ilaneskaintza
-             Products.Archetypes.interfaces._event.IObjectInitializedEvent"
+             Products.Archetypes.interfaces.IObjectInitializedEvent"
         handler=".subscribers.laneskaintza_created" />
-    
+
+    <!--<subscriber
+        for="..interfaces.laneskaintza.Ilaneskaintza
+             Products.Archetypes.interfaces._event.IObjectEditedEvent"
+        handler=".subscribers.laneskaintza_created" />-->
+
     <browser:page
       for="..interfaces.laneskaintzafolder.IlaneskaintzaFolder"
       name="pasted"
@@ -68,7 +82,7 @@
       permission="zope.Public"
     />
     <browser:page
-      for="..interfaces.laneskaintza.Ilaneskaintza"
+      for="*"
       name="laneskaintza_general"
       template="laneskaintza_general.pt"
       permission="zope.Public"

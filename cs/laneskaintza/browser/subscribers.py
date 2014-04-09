@@ -1,8 +1,5 @@
 from Acquisition import aq_inner, aq_parent
-from Products.CMFCore.utils import getToolByName
-from zope.app.annotation.interfaces import IAnnotations, IAttributeAnnotatable
-from BTrees.OOBTree import OOBTree
-from urllib import urlopen
+
 def laneskaintza_created(object, event):
     
     
@@ -12,8 +9,10 @@ def laneskaintza_created(object, event):
     aita=aq_parent(context)
     
     formfolder=aita.getFolderContents({'portal_type':'FormFolder'})
+    #import pdb;pdb.set_trace()
+    
     if formfolder:
-        form_title=context.Title()
+        form_title=context.Title() + '-form'
         form_id=context.id + '-form'
         
            
@@ -29,13 +28,20 @@ def laneskaintza_created(object, event):
         formularioa.manage_delObjects(form_list)
         barrukoak=formfolder[0].getObject().getFolderContents({'language':object.REQUEST.LANGUAGE}, full_objects=1)
         lista=[]
+        #import pdb;pdb.set_trace()
         for i in barrukoak:
             lista.append(i.id)
         copy_object=formfolder[0].getObject().manage_copyObjects(ids=lista)
         formularioa.manage_pasteObjects(copy_object)
+        
+        bidaltzailea=formularioa.getFolderContents({'portal_type':'XMLMailerAdapter'})[0]
         #import pdb;pdb.set_trace()
-        bidaltzailea=formularioa.getFolderContents({'portal_type':'XMLMailerAdapter'})[0].id
-        formularioa.setActionAdapter(bidaltzailea)
+        
+        if context.REQUEST.LANGUAGE == "eu":
+            bidaltzailea.getObject().setMsg_subject("Lan Eskaintzan alta: " + context.Title())
+        else:
+            bidaltzailea.getObject().setMsg_subject("Alta oferta de empleo: " + context.Title())
+        formularioa.setActionAdapter(bidaltzailea.id)
         
         eskertze_orria=formularioa.getFolderContents({'portal_type':'CodeFormThanksPage'})[0].id
         formularioa.setThanksPage(eskertze_orria)
@@ -45,12 +51,6 @@ def laneskaintza_created(object, event):
             formularioa.setSubmitLabel('enviar')
         else:
             formularioa.setSubmitLabel('bidali')
-        """   
-        copy_object=aita.manage_copyObjects(ids=[formfolder[0].getObject().id])
-        object.manage_pasteObjects(copy_object)
-        formularioa=getattr(context, 'alta-eman')
-        formularioa.setTitle(context.id + ' form')
+            
         formularioa._renameAfterCreation()
-        formularioa.setLanguage(context.REQUEST.LANGUAGE)
-        formularioa.reindexObject()
-        """
+        formularioa.setTitle(context.Title())
