@@ -27,7 +27,7 @@
       <tal:if_visible define="mode string:view;
                               accessor nocall:field/accessor;
                               visState python:field.widget.isVisible(here, mode);
-                              visCondition python:field.widget.testCondition(here, portal, template) and field.get_size(here);
+                              visCondition python:field.get_size(here);
                               label_macro here/laneskaintza_general/macros/label;
                               data_macro here/laneskaintza_general/macros/data;"
                       condition="python:visState == 'visible' and visCondition">
@@ -41,7 +41,7 @@
       <tal:if_visible define="mode string:view;
                               accessor nocall:field/accessor;
                               visState python:field.widget.isVisible(here, mode);
-                              visCondition python:field.widget.testCondition(here, portal, template) and field.get_size(here);
+                              visCondition python:field.get_size(here);
                               label_macro here/laneskaintza_general/macros/label;
                               data_macro here/laneskaintza_general/macros/data;"
                       condition="python:visState == 'visible' and visCondition">
@@ -76,7 +76,7 @@
       <tal:if_visible define="mode string:view;
                               accessor nocall:field/accessor;
                               visState python:field.widget.isVisible(here, mode);
-                              visCondition python:field.widget.testCondition(here, portal, template) and field.get_size(here);
+                              visCondition python:field.get_size(here);
                               label_macro here/laneskaintza_general/macros/label;
                               data_macro here/laneskaintza_general/macros/data;"
                       condition="python:visState == 'visible' and visCondition">
@@ -100,7 +100,7 @@
       <tal:if_visible define="mode string:view;
                               accessor nocall:field/accessor;
                               visState python:field.widget.isVisible(here, mode);
-                              visCondition python:field.widget.testCondition(here, portal, template) and field.get_size(here);
+                              visCondition python:field.get_size(here);
                               label_macro here/laneskaintza_general/macros/label;
                               data_macro here/laneskaintza_general/macros/data;"
                       condition="python:visState == 'visible' and visCondition">
@@ -118,7 +118,7 @@
       <tal:if_visible define="mode string:view;
                               accessor nocall:field/accessor;
                               visState python:field.widget.isVisible(here, mode);
-                              visCondition python:field.widget.testCondition(here, portal, template) and field.get_size(here);
+                              visCondition python:field.get_size(here);
                               label_macro here/laneskaintza_general/macros/label;
                               data_macro here/laneskaintza_general/macros/data;"
                       condition="python:visState == 'visible' and visCondition">
