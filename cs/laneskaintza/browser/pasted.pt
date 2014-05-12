@@ -33,9 +33,9 @@
           <div metal:use-macro="here/batch_macros/macros/navigation" />
         </tal:base>
 
-
+	</tal:foldercontents>
         </metal:listingmacro>
-        </tal:foldercontents>
+        
 
 
 
