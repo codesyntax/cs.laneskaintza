@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-04-19 15:48+0000\n"
+"POT-Creation-Date: 2015-07-10 07:51+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,8 +14,8 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
-#. Default: "Bukatutakoak ${bukatutakoak}"
 #: ./browser/pasted.pt:24
+#: ./browser/prozesuan.pt:26
 msgid "Bukatutakoak ${bukatutakoak}"
 msgstr ""
 
@@ -79,29 +79,36 @@ msgstr ""
 msgid "Description of start_data"
 msgstr ""
 
-#. Default: "Description of the Example Type"
-#: ./profiles/default/types/laneskaintzaFolder.xml
 #: ./profiles/default/types/laneskaintza.xml
+#: ./profiles/default/types/laneskaintzaFolder.xml
 msgid "Description of the Example Type"
 msgstr ""
 
-#. Default: "Prozesuan ${prozesuan}"
+#: ./browser/laneskaintzafolderview.pt:41
+msgid "Izena emateko epea itxita"
+msgstr ""
+
+#: ./browser/laneskaintzafolderview.pt:31
+msgid "Izena emateko epea zabalik"
+msgstr ""
+
 #: ./browser/pasted.pt:22
+#: ./browser/prozesuan.pt:24
 msgid "Prozesuan ${prozesuan}"
 msgstr ""
 
-#. Default: "Zabalik ${zabalik}"
 #: ./browser/pasted.pt:20
+#: ./browser/prozesuan.pt:22
 msgid "Zabalik ${zabalik}"
 msgstr ""
 
 #. Default: "Aurkeztu eskaera lan-eskaintza honetan"
-#: ./browser/laneskaintzaview.pt:16
+#: ./browser/laneskaintzaview.pt:15
 msgid "alta-eman"
 msgstr ""
 
 #. Default: "Emaitza guztiak"
-#: ./browser/laneskaintzaview.pt:140
+#: ./browser/laneskaintzaview.pt:147
 msgid "bilaketa-emaitzak"
 msgstr ""
 
@@ -138,7 +145,7 @@ msgid "final_file_enrolled"
 msgstr ""
 
 #. Default: "Search results"
-#: ./browser/laneskaintzaview.pt:119
+#: ./browser/laneskaintzaview.pt:126
 msgid "heading_search_results"
 msgstr ""
 
@@ -151,46 +158,44 @@ msgid "instance"
 msgstr ""
 
 #. Default: "Code number: 15398248R"
-#: ./browser/laneskaintzaview.pt:108
+#: ./browser/laneskaintzaview.pt:115
 msgid "label_identification_number"
 msgstr ""
 
-#: ./browser/laneskaintzaview.pt:41
+#: ./browser/laneskaintzaview.pt:40
 msgid "label_laneskaintza_contact_information"
 msgstr ""
 
-#: ./browser/laneskaintzaview.pt:36
+#: ./browser/laneskaintzaview.pt:35
 msgid "label_laneskaintza_enddata"
 msgstr ""
 
-#: ./browser/laneskaintzaview.pt:21
+#: ./browser/laneskaintzaview.pt:20
 msgid "label_laneskaintza_file_number"
 msgstr ""
 
-#: ./browser/laneskaintzaview.pt:26
+#: ./browser/laneskaintzaview.pt:25
 msgid "label_laneskaintza_information"
 msgstr ""
 
-#: ./browser/laneskaintzaview.pt:31
+#: ./browser/laneskaintzaview.pt:30
 msgid "label_laneskaintza_startdata"
 msgstr ""
 
 #. Default: "Search"
-#: ./browser/laneskaintzaview.pt:112
+#: ./browser/laneskaintzaview.pt:119
 msgid "label_search_id"
 msgstr ""
 
 #. Default: "Set search key"
-#: ./browser/laneskaintzaview.pt:97
+#: ./browser/laneskaintzaview.pt:104
 msgid "label_set_search_key"
 msgstr ""
 
-#. Default: "laneskaintza"
 #: ./profiles/default/types/laneskaintza.xml
 msgid "laneskaintza"
 msgstr ""
 
-#. Default: "laneskaintzaFolder"
 #: ./profiles/default/types/laneskaintzaFolder.xml
 msgid "laneskaintzaFolder"
 msgstr ""
@@ -213,5 +218,9 @@ msgstr ""
 
 #: ./content/laneskaintza.py:52
 msgid "start_data"
+msgstr ""
+
+#: ./content/laneskaintzafolder.py:50
+msgid "text"
 msgstr ""
 

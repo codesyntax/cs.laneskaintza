@@ -4,6 +4,9 @@
         <indexed_attr value="getSituation"/>
     </index>
     <column value="situation" />
-    
+    <index name="laneskaintza_request_form_index" meta_type="BooleanIndex">
+        <indexed_attr value="laneskaintza_request_form"/>
+    </index>
+
 </object>
 

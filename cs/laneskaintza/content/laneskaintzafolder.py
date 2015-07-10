@@ -40,6 +40,17 @@ laneskaintzaFolderSchema = folder.ATFolderSchema.copy() + atapi.Schema((
             description=_(u"Description of situation_source"),
         ),
     ),
+
+   atapi.TextField('text',
+                        required=False,
+                        searchable=True,
+            storage=atapi.AnnotationStorage(),
+                        validators=('isTidyHtmlWithCleanup',),
+                        default_output_type='text/x-html-safe',
+                        widget=atapi.RichWidget(label=_(u'text'),
+                                                rows=10,
+                                                allow_file_upload=False),
+                        ),
 ))
 
 # Set storage on fields copied from ATFolderSchema, making sure
@@ -63,7 +74,7 @@ class laneskaintzaFolder(folder.ATFolder):
 
     title = atapi.ATFieldProperty('title')
     description = atapi.ATFieldProperty('description')
-    
+
     # -*- Your ATSchema to Python Property Bridges Here ... -*-
 
 atapi.registerType(laneskaintzaFolder, PROJECTNAME)

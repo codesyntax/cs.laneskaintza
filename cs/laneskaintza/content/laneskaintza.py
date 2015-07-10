@@ -1,6 +1,6 @@
 """Definition of the laneskaintza content type
 """
-
+from DateTime import DateTime
 from zope.interface import implements, directlyProvides
 try:
     from Products.LinguaPlone import public as atapi
@@ -126,7 +126,7 @@ laneskaintzaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                      ),
                   ),
 
-    
+
    atapi.StringField('situation',
                   searchable=1,
 		  languageIndependent=0,
@@ -134,7 +134,7 @@ laneskaintzaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                   widget=atapi.SelectionWidget(
                      label=_(u"situation"),
                      description=_(u"Description of situation"),
-		     
+
                      ),
                   ),
    atapi.BooleanField('request_form',
@@ -143,10 +143,10 @@ laneskaintzaSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                   widget=atapi.BooleanWidget(
                      label=_(u"request_form"),
                      description=_(u"Description of request_form"),
-		     
+
                      ),
-                  ),	 
-  
+                  ),
+
 ))
 
 # Set storage on fields copied from ATFolderSchema, making sure
@@ -171,11 +171,29 @@ class laneskaintza(folder.ATFolder):
 
     title = atapi.ATFieldProperty('title')
     description = atapi.ATFieldProperty('description')
-    
+
     # -*- Your ATSchema to Python Property Bridges Here ... -*-
     def whichsituation(self):
             #import pdb;pdb.set_trace()
             situation_list=aq_parent(self).getSituation_source()
-            
+
             return situation_list
+
+    def laneskaintza_request_form(self):
+        expiration = True
+        formularioa = self.getFolderContents({'portal_type':'FormFolder'})
+        if formularioa:
+            formularioa = formularioa[0].getObject()
+            if formularioa.getExpirationDate():
+                if formularioa.getExpirationDate() > DateTime():
+                    expiration = True
+                else:
+                    expiration = False
+        else:
+            expiration = False
+
+        if self.getRequest_form() and not self.getFolderContents({'portal_type':'csvfinder'}) and expiration:
+            return True
+        else:
+            return False
 atapi.registerType(laneskaintza, PROJECTNAME)

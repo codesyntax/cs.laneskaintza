@@ -23,21 +23,21 @@ class laneskaintzaView(BrowserView):
     def portal(self):
         return getToolByName(self.context, 'portal_url').getPortalObject()
 
-    def request_form(self):
-        #import pdb;pdb.set_trace()
-        expiration=True
-        formularioa=self.context.getFolderContents({'portal_type':'FormFolder'})
-        if formularioa:
-            formularioa=formularioa[0].getObject()
-            if formularioa.getExpirationDate():
-                if formularioa.getExpirationDate() > DateTime():
-                    expiration=True
-                else:
-                    expiration=False
-        else:
-            expiration=False
-        
-        if self.context.getRequest_form() and not self.context.getFolderContents({'portal_type':'csvfinder'}) and expiration:
-            return True
-        else:
-            return False
+    # def request_form(self):
+    #     #import pdb;pdb.set_trace()
+    #     expiration=True
+    #     formularioa=self.context.getFolderContents({'portal_type':'FormFolder'})
+    #     if formularioa:
+    #         formularioa=formularioa[0].getObject()
+    #         if formularioa.getExpirationDate():
+    #             if formularioa.getExpirationDate() > DateTime():
+    #                 expiration=True
+    #             else:
+    #                 expiration=False
+    #     else:
+    #         expiration=False
+
+    #     if self.context.getRequest_form() and not self.context.getFolderContents({'portal_type':'csvfinder'}) and expiration:
+    #         return True
+    #     else:
+    #         return False
