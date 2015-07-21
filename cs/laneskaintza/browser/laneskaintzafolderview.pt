@@ -11,6 +11,10 @@
 	<h1 class="documentFirstHeading">
           <tal:content content="here/Title"></tal:content>
 	</h1>
+
+  <div tal:replace="structure context/getAbove_text">
+  </div>
+
         <tal:foldercontents define="laneskaintzak view/laneskaintza_lista; no_request_laneskaintzak view/laneskaintza_lista_no_request_form">
 	<ul id="tabs"
           tal:define="lista view/situation_list;

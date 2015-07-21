@@ -41,6 +41,17 @@ laneskaintzaFolderSchema = folder.ATFolderSchema.copy() + atapi.Schema((
         ),
     ),
 
+   atapi.TextField('above_text',
+                        required=False,
+                        searchable=True,
+            storage=atapi.AnnotationStorage(),
+                        validators=('isTidyHtmlWithCleanup',),
+                        default_output_type='text/x-html-safe',
+                        widget=atapi.RichWidget(label=_(u'above_text'),
+                                                rows=10,
+                                                allow_file_upload=False),
+                        ),
+
    atapi.TextField('text',
                         required=False,
                         searchable=True,
