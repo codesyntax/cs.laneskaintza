@@ -1,5 +1,13 @@
 from Acquisition import aq_inner, aq_parent
 
+
+def ploneformgen_modified(object, event):
+    context = aq_inner(object)
+    aita=aq_parent(context)
+    if aita.portal_type=='laneskaintza':
+        aita.reindexObject()
+        
+
 def laneskaintza_created(object, event):
     
     

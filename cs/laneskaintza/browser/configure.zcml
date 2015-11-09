@@ -57,6 +57,11 @@
              Products.Archetypes.interfaces.IObjectInitializedEvent"
         handler=".subscribers.laneskaintza_created" />
 
+    <subscriber
+        for="Products.PloneFormGen.interfaces.IPloneFormGenForm
+             Products.Archetypes.interfaces.event.IObjectEditedEvent"
+        handler=".subscribers.ploneformgen_modified" />
+
     <!--<subscriber
         for="..interfaces.laneskaintza.Ilaneskaintza
              Products.Archetypes.interfaces._event.IObjectEditedEvent"
