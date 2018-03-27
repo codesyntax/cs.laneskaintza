@@ -26,9 +26,18 @@ class laneskaintzaFolderView(BrowserView):
         if not situation_string:
             situations = self.states()
             situation_string = situations[0]
+        # laneskaintzak_request_form = context.getFolderContents({'portal_type':'laneskaintza','review_state':'published',
+        #                                             'laneskaintza_situation':situation_string,
+        #                                             'laneskaintza_request_form_index':(True, True)})
         laneskaintzak_request_form = context.getFolderContents({'portal_type':'laneskaintza','review_state':'published',
-                                                    'laneskaintza_situation':situation_string,
-                                                    'laneskaintza_request_form_index':(True, True)})
+                                                     'laneskaintza_situation':situation_string})
+        return_list = []
+        for element in laneskaintzak_request_form:
+            obj = element.getObject()
+            has_request_form = obj.laneskaintza_request_form()
+            if has_request_form:
+                return_list.append(element)
+        return return_list
 
         return laneskaintzak_request_form
 
@@ -38,12 +47,18 @@ class laneskaintzaFolderView(BrowserView):
         if not situation_string:
             situations = self.states()
             situation_string = situations[0]
+        # laneskaintzak_request_form = context.getFolderContents({'portal_type':'laneskaintza','review_state':'published',
+        #                                             'laneskaintza_situation':situation_string,
+        #                                             'laneskaintza_request_form_index':(False, False)})
         laneskaintzak_request_form = context.getFolderContents({'portal_type':'laneskaintza','review_state':'published',
-                                                    'laneskaintza_situation':situation_string,
-                                                    'laneskaintza_request_form_index':(False, False)})
-
-
-        return laneskaintzak_request_form
+                                                     'laneskaintza_situation':situation_string})
+        return_list = []
+        for element in laneskaintzak_request_form:
+            obj = element.getObject()
+            has_request_form = obj.laneskaintza_request_form()
+            if not has_request_form:
+                return_list.append(element)
+        return return_list
 
     def states(self):
         context = aq_inner(self.context)
